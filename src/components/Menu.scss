@@ -1,0 +1,38 @@
+@import "../styleScss/colors.scss";
+@import "../styleScss/global.scss";
+@import "../styleScss/mixIn.scss";
+
+.menu-opt {
+  opacity: 0;
+  border-top: 1px solid $green;
+  @extend %center-item;
+  @include breakpoint("large device") {
+    max-width: 1200px;
+    margin: 2em auto;
+    @include gridStyle(1fr 2fr);
+    justify-content: center;
+  }
+}
+.menu-category {
+  @include gridStyle(auto, 2fr 1fr);
+  justify-items: center;
+  img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+}
+.price-list {
+  @include flexStyle(row, flex-end, auto);
+  @include breakpoint("medium device") {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+  p:first-of-type {
+    margin-right: auto;
+    @include breakpoint("large device") {
+      margin-right: 5em;
+      justify-self: start;
+    }
+  }
+}

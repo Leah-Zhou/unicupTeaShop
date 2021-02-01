@@ -1,0 +1,36 @@
+@import "../styleScss/colors.scss";
+@import "../styleScss/global.scss";
+@import "../styleScss/mixIn.scss";
+
+.footer {
+  background-color: $lightGrey;
+  @include flexStyle(column, center, 500px);
+  > img {
+    height: auto;
+    width: 100%;
+    max-width: 150px;
+    margin: 2em;
+  }
+  p {
+    font-size: clamp(15px, 2vw, 16px);
+  }
+}
+.business-info {
+  justify-items: start;
+  align-items: center;
+  @include breakpoint("small device") {
+    @include gridStyle(1fr);
+  }
+  @include breakpoint("large device") {
+    @include gridStyle(1fr 1fr);
+  }
+  li {
+    @include flexStyle(row, center, auto);
+    margin: 1em;
+  }
+  img {
+    width: 70%;
+    max-width: $footerIconLarge;
+    margin-right: 1em;
+  }
+}

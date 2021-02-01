@@ -1,0 +1,56 @@
+@mixin breakpoint($point) {
+  @if $point== "small device" {
+    @media (min-width: 300px) and (max-width: 649px) {
+      @content;
+    }
+  } @else if $point == "medium device" {
+    @media (min-width: 650px) {
+      @content;
+    }
+  } @else if $point == "large device" {
+    @media (min-width: 1150px) {
+      @content;
+    }
+  }
+}
+
+@mixin prefix($property, $value, $prefixes) {
+  @each $prefix in $prefixes {
+    -#{$prefix}-#{$property}: $value;
+  }
+  #{$property}: $value;
+}
+
+@mixin flexStyle($direction, $justify, $height) {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  top: 10;
+  z-index: 5;
+  flex-basis: 100%;
+  padding-left: 0;
+  -webkit-flex-direction: $direction;
+  -ms-flex-direction: $direction;
+  flex-direction: $direction;
+  justify-content: $justify;
+  height: $height;
+}
+
+@mixin planetStyle($top, $left, $opacity, $width) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  opacity: $opacity;
+  width: $width;
+}
+
+@mixin gridStyle($column: auto, $row: auto) {
+  display: grid;
+  display: -ms-grid;
+  grid-template-columns: $column;
+  grid-template-rows: $row;
+}

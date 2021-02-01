@@ -1,0 +1,41 @@
+@import "../styleScss/colors.scss";
+@import "../styleScss/global.scss";
+@import "../styleScss/mixIn.scss";
+
+.lab-section {
+  text-align: center;
+  @extend %center-item;
+  @include breakpoint("medium device") {
+    @include gridStyle(1fr);
+  }
+}
+.lab-content {
+  margin-bottom: 50px;
+  @extend %center-item;
+  @include breakpoint("large device") {
+    @include gridStyle(1fr 1fr);
+    padding: 2em;
+  }
+  img {
+    box-shadow: 20px 20px $lightOrange;
+  }
+}
+
+.intro-content {
+  @extend %center-item;
+  margin: 1em;
+  @include breakpoint("small device") {
+    @include gridStyle(1fr, auto 2fr);
+    justify-self: center;
+  }
+  @include breakpoint("large device") {
+    justify-self: start;
+  }
+  p {
+    max-width: 500px;
+    @include breakpoint("large device") {
+      margin: 3em;
+      text-align: start;
+    }
+  }
+}

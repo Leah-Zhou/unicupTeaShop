@@ -1,0 +1,135 @@
+@import "../styleScss/colors.scss";
+@import "../styleScss/global.scss";
+@import "../styleScss/mixIn.scss";
+
+.head-section {
+  background: url("../imgs/hero-img.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 90vh;
+  width: 100vw;
+}
+.nav-bar {
+  padding-top: 5px;
+  background-color: $lightOrange;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  @include flexStyle(row, flex-end, auto);
+  @include breakpoint("small device") {
+    flex-wrap: wrap;
+    justify-items: end;
+  }
+  @include breakpoint("large device") {
+    flex-wrap: nowrap;
+  }
+  li {
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    font-size: clamp($minSmallFont, 1.5vw, $maxSmallFont);
+  }
+}
+@supports (-ms-accelerator: true) {
+  .show {
+    justify-content: space-around;
+  }
+}
+.show {
+  @include breakpoint("small device") {
+    @include flexStyle(column, space-around, 100vh);
+    background: linear-gradient($lightOrange, $creamwhite);
+    transition: height 0.2s ease-out;
+    opacity: 1;
+    width: 100vw;
+  }
+  @include breakpoint("medium device") {
+    @include flexStyle(row, space-around, auto);
+  }
+}
+
+.hide {
+  @include breakpoint("small device") {
+    @include flexStyle(column, space-around, 0vh);
+    flex-wrap: wrap;
+    opacity: 0;
+    transition: height 0.2s ease-out;
+  }
+  @include breakpoint("medium device") {
+    @include flexStyle(row, space-around, auto);
+  }
+}
+.fix-position {
+  overflow: hidden;
+  height: 100%;
+}
+.menu-icon {
+  @include breakpoint("small device") {
+    width: $iconSize;
+    padding-right: 20px;
+  }
+  @include breakpoint("medium device") {
+    display: none;
+  }
+}
+.logo-icon {
+  width: 100%;
+  max-width: $logoSizeLarge;
+  height: auto;
+  margin-right: auto;
+  margin-left: 10px;
+}
+.logo-name {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  text-align: center;
+  max-width: 100%;
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+  }
+  p {
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: $blue;
+  }
+}
+@keyframes scaleElement {
+  0% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+.select-opt {
+  font-weight: 800;
+  color: $orange;
+  &:before {
+    content: " ";
+    background-image: url("../icons/planet.svg");
+    @include planetStyle(-10px, -50px, 1, 40px);
+    display: inline-block;
+    background-size: contain;
+    background-position: bottom;
+    height: 40px;
+    animation: scaleElement 0.5s forwards ease-in-out;
+  }
+}
+.menu-i-line {
+  fill: $blue;
+}
+.menu-i-circle {
+  fill: $orange;
+}
