@@ -1,101 +1,102 @@
 // logo and icon size
-$logoSizeSmall:20px;
-$logoSizeLarge:50px;
-$iconSize:55px;
-$footerIconSmall:18px;
+$logoSizeSmall: 20px;
+$logoSizeLarge: 50px;
+$iconSize: 55px;
+$footerIconSmall: 18px;
 $footerIconLarge: 25px;
 
-// font size 
-$minLargeFont:26px;
-$maxLargeFont:46px;
-$minSmallFont:18px;
-$maxSmallFont:21px;
-$minP:16px;
-$maxP:18px;
+// font size
+$minLargeFont: 26px;
+$maxLargeFont: 46px;
+$minSmallFont: 16px;
+$maxSmallFont: 18px;
+$minP: 16px;
+$maxP: 18px;
 
-
-html,body{
+html,
+body {
   box-sizing: border-box;
-  margin:0;
-  font-family:'Open Sans', sans-serif;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
   padding: 0;
-  background-color: #FDFEF0;
+  background-color: #fdfef0;
   line-height: 1.8;
-  color:$black;
+  color: $black;
 }
-*{
-  box-sizing:inherit;
+* {
+  box-sizing: inherit;
 }
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-ul{
-  margin:0;
+ul {
+  margin: 0;
   padding: 0;
 }
-li{
-  list-style:none;
+li {
+  list-style: none;
 }
-h1{
-  font-size: clamp($minLargeFont,3vw,$maxLargeFont);
-  font-family: 'Poppins', sans-serif;
+h1 {
+  font-size: clamp($minLargeFont, 3vw, $maxLargeFont);
+  font-family: "Poppins", sans-serif;
   font-weight: 200;
   letter-spacing: 5px;
 }
-h3{
-  font-size:clamp($minSmallFont, 1.5vw, $minLargeFont);
+h3 {
+  font-size: clamp($minSmallFont, 1.5vw, $minLargeFont);
   letter-spacing: 2px;
 }
-p{
+p {
   font-size: clamp($minP, 2vw, $maxP);
   letter-spacing: 1px;
 }
 
-.container{
+.container {
   margin: clamp(3rem, 2vw, 3rem);
   padding: 1.5em;
   text-align: center;
   overflow: hidden;
 }
-.planet-style{
+.planet-style {
   width: 100%;
   max-width: 80px;
 }
-.img-style{
+.img-style {
   max-width: 500px;
   height: auto;
   width: 100%;
-  margin:0.5em;
+  margin: 0.5em;
 }
 
-@keyframes floating{
-  0%{
+@keyframes floating {
+  0% {
     transform: translatey(0px) scale(1);
   }
-  50%{
+  50% {
     transform: translatey(-20px) scale(1.2);
   }
-  100%{transform: translatey(0px) scale(1);
+  100% {
+    transform: translatey(0px) scale(1);
   }
 }
 
-@-webkit-keyframes floating{
-  0%{
+@-webkit-keyframes floating {
+  0% {
     transform: translatey(0px) scale(1);
   }
-  50%{
+  50% {
     transform: translatey(-20px) scale(1.2);
   }
-  100%{transform: translatey(0px) scale(1);
+  100% {
+    transform: translatey(0px) scale(1);
   }
 }
 %center-item {
   justify-items: center;
   align-items: center;
 }
-.float{
-  animation:floating 5s infinite forwards ease-in;
-  -webkit-animation: floating 5s infinite forwards ease-in;;
+.float {
+  animation: floating 5s infinite forwards ease-in;
+  -webkit-animation: floating 5s infinite forwards ease-in;
 }
-
