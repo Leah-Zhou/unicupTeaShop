@@ -56,7 +56,10 @@ const Review = (props, ref) => {
             data-aos-anchor-placement="top-center"
           >
             <li>
-              <img src={review.img} alt="user review" />
+              <img
+                src={process.env.PUBLIC_URL + review.img}
+                alt="user review"
+              />
             </li>
             <li>
               <p style={{ fontWeight: 700 }}>"{review.abstract}"</p>

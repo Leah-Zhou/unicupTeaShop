@@ -1,25 +1,32 @@
 {
-  "review":[
-     {"user":"Jame loves Bubble Tea",
-       "key":"userOne",
-       "abstract":"It tases so good!", 
-       "review":"I really like the signature drink Uni milk tea. It tastes so good and I strongly recommenced to try it! The service there is also good! The cashier is so patient to introduce me about their tea categories.", "img":"./imgs/review-one.png"
-      },
-     {"user":"Stella", 
-      "key":"userTwo",
-      "abstract":"Tea shop is so considerate!", 
-      "review":"I am so happy that this bubble tea shop is so considerate. The customer service is amazing! I had a great weekend with my friends there! ", "img":"./imgs/review-two.png"
+  "review": [
+    {
+      "user": "Jame loves Bubble Tea",
+      "key": "userOne",
+      "abstract": "It tases so good!",
+      "review": "I really like the signature drink Uni milk tea. It tastes so good and I strongly recommenced to try it! The service there is also good! The cashier is so patient to introduce me about their tea categories.",
+      "img": "/imgs/review-one.png"
     },
-     {"user":"Katty",
-      "key":"userThree", 
-      "abstract":"Real tea flavor in the bubble tea drinks!", 
-      "review":"This place is really serious of tea making! I could really tase the real tea flavor in the bubble tea drinks! The marble milk tea is my love!", "img":"./imgs/review-three.png"
+    {
+      "user": "Stella",
+      "key": "userTwo",
+      "abstract": "Tea shop is so considerate!",
+      "review": "I am so happy that this bubble tea shop is so considerate. The customer service is amazing! I had a great weekend with my friends there! ",
+      "img": "/imgs/review-two.png"
     },
-     {"user":"Steven Lam",
-      "key":"userFour", 
-      "abstract":"Real tea flavor in the bubble tea drinks!", 
-      "review":"I really love their fruit tea especially the Apple in your eyes. The tase is so special and you can't find it anywhere. Strongly recommended!", "img":"./imgs/review-four.png"
+    {
+      "user": "Katty",
+      "key": "userThree",
+      "abstract": "Real tea flavor in the bubble tea drinks!",
+      "review": "This place is really serious of tea making! I could really tase the real tea flavor in the bubble tea drinks! The marble milk tea is my love!",
+      "img": "/imgs/review-three.png"
+    },
+    {
+      "user": "Steven Lam",
+      "key": "userFour",
+      "abstract": "Real tea flavor in the bubble tea drinks!",
+      "review": "I really love their fruit tea especially the Apple in your eyes. The tase is so special and you can't find it anywhere. Strongly recommended!",
+      "img": "/imgs/review-four.png"
     }
-
   ]
 }

@@ -51,7 +51,7 @@ function MenuComponent(props, ref) {
             data-aos-anchor-placement="top-center"
           >
             <section className="menu-category">
-              <img src={each.img} alt={each.title} />
+              <img src={process.env.PUBLIC_URL + each.img} alt={each.title} />
               <p style={{ fontWeight: "600", fontSize: "23px" }}>
                 {each.title}
               </p>

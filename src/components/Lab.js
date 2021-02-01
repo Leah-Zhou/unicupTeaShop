@@ -44,7 +44,7 @@ const BrandIntro = (props, ref) => {
         {data.map((each) => (
           <div key={uuidv4()} className="lab-content">
             <img
-              src={each.img}
+              src={process.env.PUBLIC_URL + each.img}
               alt={each.alt}
               className="img-style"
               data-aos="fade-right"

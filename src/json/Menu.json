@@ -1,43 +1,45 @@
-{    
-  "opts" :[{
-    "img":"./imgs/juice.png", 
-    "delay":"1",
-    "title":"Fresh Fruit Tea/Juice",
-    "content":[
-      {"name": "Orange Lulu Lemon Tea", "price":"5.75"},
-      {"name": "Passion Fruit Tea", "price":"5.75"},
-      {"name": "Strawberry Refresher", "price":"5.55"},
-      {"name": "Appple In Your Eyes", "price":"6.25"},
-      {"name": "Full Cup Mango", "price":"5.55"},
-      {"name": "Kiwi Lover", "price":"5.75"}] 
-      }, 
-    
+{
+  "opts": [
     {
-      "img":"./imgs/milktea.png", 
-      "delay":"3",
-      "title":"Milk Tea Series",
-       "content":[
-        {"name": "Signature Uni Milk Tea", "price":"5.75"},
-        {"name": "Marble Boba Milk Tea", "price":"5.25"},
-        {"name": "Jasmine Milk Tea", "price":"5.75"},
-        {"name": "Macha Milk Tea", "price":"5.75"},
-        {"name": "Classic Iron Milk Tea", "price":"6.25"},
-        {"name": "Oolong Milk Tea", "price":"5.75"}
-       ]   
-      }, 
-      
-      {
-        "img":"./imgs/tea.png",
-        "delay":"5",
-         "title":"Original Brewed Tea",
-         "content":[
-          {"name": "Mint Majesty", "price":"5.75"},
-          {"name": "Peach Tranquility", "price":"5.25"},
-          {"name": "Ripended Puer Tea ", "price":"5.75"},
-          {"name": "White Peony Tea", "price":"5.75"},
-          {"name": "Beauty Lan", "price":"5.75"},
-          {"name": "Big Red Robe", "price":"5.55"} 
-         ]             
-         }]
+      "img": "/imgs/juice.png",
+      "delay": "1",
+      "title": "Fresh Fruit Tea/Juice",
+      "content": [
+        { "name": "Orange Lulu Lemon Tea", "price": "5.75" },
+        { "name": "Passion Fruit Tea", "price": "5.75" },
+        { "name": "Strawberry Refresher", "price": "5.55" },
+        { "name": "Appple In Your Eyes", "price": "6.25" },
+        { "name": "Full Cup Mango", "price": "5.55" },
+        { "name": "Kiwi Lover", "price": "5.75" }
+      ]
+    },
 
-}             
+    {
+      "img": "/imgs/milktea.png",
+      "delay": "3",
+      "title": "Milk Tea Series",
+      "content": [
+        { "name": "Signature Uni Milk Tea", "price": "5.75" },
+        { "name": "Marble Boba Milk Tea", "price": "5.25" },
+        { "name": "Jasmine Milk Tea", "price": "5.75" },
+        { "name": "Macha Milk Tea", "price": "5.75" },
+        { "name": "Classic Iron Milk Tea", "price": "6.25" },
+        { "name": "Oolong Milk Tea", "price": "5.75" }
+      ]
+    },
+
+    {
+      "img": "/imgs/tea.png",
+      "delay": "5",
+      "title": "Original Brewed Tea",
+      "content": [
+        { "name": "Mint Majesty", "price": "5.75" },
+        { "name": "Peach Tranquility", "price": "5.25" },
+        { "name": "Ripended Puer Tea ", "price": "5.75" },
+        { "name": "White Peony Tea", "price": "5.75" },
+        { "name": "Beauty Lan", "price": "5.75" },
+        { "name": "Big Red Robe", "price": "5.55" }
+      ]
+    }
+  ]
+}
