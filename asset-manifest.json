@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/unicupTeaShop/static/css/main.0c4bc08c.chunk.css",
-    "main.js": "/unicupTeaShop/static/js/main.80d3f490.chunk.js",
-    "main.js.map": "/unicupTeaShop/static/js/main.80d3f490.chunk.js.map",
+    "main.js": "/unicupTeaShop/static/js/main.c4f7f07e.chunk.js",
+    "main.js.map": "/unicupTeaShop/static/js/main.c4f7f07e.chunk.js.map",
     "runtime-main.js": "/unicupTeaShop/static/js/runtime-main.47347bad.js",
     "runtime-main.js.map": "/unicupTeaShop/static/js/runtime-main.47347bad.js.map",
     "static/css/2.ec02d681.chunk.css": "/unicupTeaShop/static/css/2.ec02d681.chunk.css",
@@ -29,6 +29,6 @@
     "static/css/2.ec02d681.chunk.css",
     "static/js/2.aae863fd.chunk.js",
     "static/css/main.0c4bc08c.chunk.css",
-    "static/js/main.80d3f490.chunk.js"
+    "static/js/main.c4f7f07e.chunk.js"
   ]
 }
