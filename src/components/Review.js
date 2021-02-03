@@ -4,7 +4,6 @@ import "./Review.scss";
 import { v4 as uuidv4 } from "uuid";
 import Plante from "../icons/planet.svg";
 import "aos/dist/aos.css";
-import AOS from "aos";
 
 const Review = (props, ref) => {
   const ReviewInfo = ReviewData.review;
@@ -35,12 +34,6 @@ const Review = (props, ref) => {
     }
   });
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-  }, []);
-
   return (
     <div className="container" ref={ref}>
       <section data-aos="fade-right">
@@ -64,7 +57,7 @@ const Review = (props, ref) => {
             <li>
               <p style={{ fontWeight: 700 }}>"{review.abstract}"</p>
               <p>{review.review}</p>
-              <p>From customer {review.user}</p>
+              <p>From dear customer {review.user}</p>
             </li>
           </ul>
         ))}

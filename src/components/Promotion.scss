@@ -8,7 +8,7 @@
 }
 .wrap {
   position: relative;
-  background: url("../imgs/promotion.jpg") $creamwhite no-repeat top;
+  background: url("../imgs/promotion.png") $creamwhite no-repeat top;
   @include prefix(background-size, cover, webkit moz o);
   background-attachment: fixed;
   width: 100vw;

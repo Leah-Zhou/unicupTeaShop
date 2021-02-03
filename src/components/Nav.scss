@@ -3,7 +3,7 @@
 @import "../styleScss/mixIn.scss";
 
 .head-section {
-  background: url("../imgs/hero-img.jpg") $grey no-repeat center;
+  background: url("../imgs/hero-img.png") $grey no-repeat center;
   @include prefix(background-size, cover, webkit moz o);
   background-attachment: fixed;
   height: 90vh;
@@ -38,6 +38,7 @@
   }
 }
 .show {
+  z-index: 5;
   @include breakpoint("small device") {
     @include flexStyle(column, space-around, 100vh);
     background: linear-gradient($lightOrange, $creamwhite);
@@ -60,6 +61,7 @@
   }
   @include breakpoint("medium device") {
     @include flexStyle(row, space-around, auto);
+    z-index: 5;
   }
 }
 .fix-position {

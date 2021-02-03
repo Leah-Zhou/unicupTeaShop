@@ -5,19 +5,17 @@
 .lab-section {
   @extend %center-item;
   @include breakpoint("medium device") {
-    @include flexStyle(column, center, auto);
+    @include gridStyle(1fr);
     margin: 0 auto;
   }
 }
 .lab-content {
   margin-bottom: 50px;
+  margin-top: 50px;
   @extend %center-item;
   @include breakpoint("large device") {
     @include gridStyle(1fr 1fr);
     padding: 2em;
-  }
-  & > * {
-    float: left;
   }
   img {
     box-shadow: 20px 20px $lightOrange;
@@ -26,7 +24,7 @@
 
 .intro-content {
   @extend %center-item;
-  margin: 1em;
+  // margin: 1em;
   @include breakpoint("small device") {
     @include gridStyle(1fr, auto 2fr);
     justify-self: center;

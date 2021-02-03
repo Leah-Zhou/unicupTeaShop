@@ -9,28 +9,30 @@
 }
 .each-review {
   margin: 1.8em 0;
-  padding: 1.5em 1em;
   opacity: 0;
   border: solid 1px $green;
   border-radius: 10px;
   @extend %center-item;
   @include breakpoint("small device") {
+    padding: 1.5em 0;
     @include gridStyle(1fr);
   }
   @include breakpoint("medium device") {
+    padding: 1.5em;
     @include gridStyle(1fr 1.5fr);
   }
   @include breakpoint("large device") {
     @include gridStyle(1fr);
     margin: 3em;
-    padding: 1.5em;
   }
 
   img {
     width: 100%;
     min-width: 200px;
     max-width: 300px;
-    box-shadow: 20px 20px $lightGreen;
+    @include breakpoint("medium device") {
+      box-shadow: 20px 20px $lightGreen;
+    }
   }
   li {
     margin: 0 0.5em;
