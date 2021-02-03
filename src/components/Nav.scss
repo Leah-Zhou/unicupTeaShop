@@ -3,7 +3,7 @@
 @import "../styleScss/mixIn.scss";
 
 .head-section {
-  background: url("../imgs/hero-img.png") pink no-repeat center;
+  background: url("../imgs/hero-img.png") $lightGrey no-repeat center;
   @include prefix(background-size, cover, webkit moz o);
   background-attachment: fixed;
   height: 90vh;

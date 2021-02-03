@@ -48,7 +48,7 @@ function MenuComponent(props, ref) {
             className="menu-opt"
             data-aos="fade-left"
             data-aos-duration="800"
-            data-aos-anchor-placement="center-center"
+            data-aos-anchor-placement="top-center"
           >
             <section className="menu-category">
               <img src={process.env.PUBLIC_URL + each.img} alt={each.title} />
