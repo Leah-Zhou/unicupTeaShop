@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/unicupTeaShop/static/css/main.2a9f887b.chunk.css",
-    "main.js": "/unicupTeaShop/static/js/main.c9aaf8f7.chunk.js",
-    "main.js.map": "/unicupTeaShop/static/js/main.c9aaf8f7.chunk.js.map",
+    "main.css": "/unicupTeaShop/static/css/main.dbd82b75.chunk.css",
+    "main.js": "/unicupTeaShop/static/js/main.96f5a0c6.chunk.js",
+    "main.js.map": "/unicupTeaShop/static/js/main.96f5a0c6.chunk.js.map",
     "runtime-main.js": "/unicupTeaShop/static/js/runtime-main.47347bad.js",
     "runtime-main.js.map": "/unicupTeaShop/static/js/runtime-main.47347bad.js.map",
     "static/css/2.ec02d681.chunk.css": "/unicupTeaShop/static/css/2.ec02d681.chunk.css",
-    "static/js/2.aae863fd.chunk.js": "/unicupTeaShop/static/js/2.aae863fd.chunk.js",
-    "static/js/2.aae863fd.chunk.js.map": "/unicupTeaShop/static/js/2.aae863fd.chunk.js.map",
+    "static/js/2.1065b738.chunk.js": "/unicupTeaShop/static/js/2.1065b738.chunk.js",
+    "static/js/2.1065b738.chunk.js.map": "/unicupTeaShop/static/js/2.1065b738.chunk.js.map",
     "index.html": "/unicupTeaShop/index.html",
     "static/css/2.ec02d681.chunk.css.map": "/unicupTeaShop/static/css/2.ec02d681.chunk.css.map",
-    "static/css/main.2a9f887b.chunk.css.map": "/unicupTeaShop/static/css/main.2a9f887b.chunk.css.map",
-    "static/js/2.aae863fd.chunk.js.LICENSE.txt": "/unicupTeaShop/static/js/2.aae863fd.chunk.js.LICENSE.txt",
+    "static/css/main.dbd82b75.chunk.css.map": "/unicupTeaShop/static/css/main.dbd82b75.chunk.css.map",
+    "static/js/2.1065b738.chunk.js.LICENSE.txt": "/unicupTeaShop/static/js/2.1065b738.chunk.js.LICENSE.txt",
     "static/media/brand-name.27147493.gif": "/unicupTeaShop/static/media/brand-name.27147493.gif",
     "static/media/clock.c17e6ae8.svg": "/unicupTeaShop/static/media/clock.c17e6ae8.svg",
     "static/media/contact.d810a7f8.svg": "/unicupTeaShop/static/media/contact.d810a7f8.svg",
@@ -22,13 +22,13 @@
     "static/media/icon-logo.c8bc5e4a.svg": "/unicupTeaShop/static/media/icon-logo.c8bc5e4a.svg",
     "static/media/location.fa6fecb3.svg": "/unicupTeaShop/static/media/location.fa6fecb3.svg",
     "static/media/logo.3d7d8171.svg": "/unicupTeaShop/static/media/logo.3d7d8171.svg",
-    "static/media/Promotion.scss": "/unicupTeaShop/static/media/promotion.f8563132.jpg"
+    "static/media/Promotion.scss": "/unicupTeaShop/static/media/promotion.eed3d4ec.png"
   },
   "entrypoints": [
     "static/js/runtime-main.47347bad.js",
     "static/css/2.ec02d681.chunk.css",
-    "static/js/2.aae863fd.chunk.js",
-    "static/css/main.2a9f887b.chunk.css",
-    "static/js/main.c9aaf8f7.chunk.js"
+    "static/js/2.1065b738.chunk.js",
+    "static/css/main.dbd82b75.chunk.css",
+    "static/js/main.96f5a0c6.chunk.js"
   ]
 }
