@@ -34,7 +34,7 @@ const WebFooter = () => {
           </li>
         ))}
       </ul>
-      <p> &copy;Copyright: 2020Unicup. All rights reserved</p>
+      <p> &copy;Copyright: 2021Unicup. All rights reserved</p>
     </div>
   );
 };

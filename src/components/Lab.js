@@ -49,7 +49,7 @@ const BrandIntro = (props, ref) => {
               className="img-style"
               data-aos="fade-right"
               data-aos-duration="1000"
-              data-aos-anchor-placement="top-center"
+              data-aos-anchor-placement="top-bottom"
             />
             <div
               className="intro-content"

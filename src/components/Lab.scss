@@ -3,10 +3,10 @@
 @import "../styleScss/mixIn.scss";
 
 .lab-section {
-  text-align: center;
   @extend %center-item;
   @include breakpoint("medium device") {
-    @include gridStyle(1fr);
+    @include flexStyle(column, center, auto);
+    margin: 0 auto;
   }
 }
 .lab-content {
@@ -15,6 +15,9 @@
   @include breakpoint("large device") {
     @include gridStyle(1fr 1fr);
     padding: 2em;
+  }
+  & > * {
+    float: left;
   }
   img {
     box-shadow: 20px 20px $lightOrange;

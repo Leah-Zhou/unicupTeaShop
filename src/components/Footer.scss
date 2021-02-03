@@ -4,7 +4,8 @@
 
 .footer {
   background-color: $lightGrey;
-  @include flexStyle(column, center, 500px);
+  padding: 3em 2em;
+  @include flexStyle(column, center, 650px);
   > img {
     height: auto;
     width: 100%;

@@ -3,8 +3,8 @@
 @import "../styleScss/mixIn.scss";
 
 .head-section {
-  background: url("../imgs/hero-img.jpg") no-repeat center;
-  background-size: cover;
+  background: url("../imgs/hero-img.jpg") $grey no-repeat center;
+  @include prefix(background-size, cover, webkit moz o);
   background-attachment: fixed;
   height: 90vh;
   width: 100vw;
@@ -41,6 +41,7 @@
   @include breakpoint("small device") {
     @include flexStyle(column, space-around, 100vh);
     background: linear-gradient($lightOrange, $creamwhite);
+    padding-bottom: 200px;
     transition: height 0.2s ease-out;
     opacity: 1;
     width: 100vw;

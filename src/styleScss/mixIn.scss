@@ -29,6 +29,7 @@
   display: flex;
   align-content: center;
   align-items: center;
+  -ms-flex-pack: $justify;
   top: 10;
   z-index: 5;
   flex-basis: 100%;
@@ -51,6 +52,6 @@
 @mixin gridStyle($column: auto, $row: auto) {
   display: grid;
   display: -ms-grid;
-  grid-template-columns: $column;
-  grid-template-rows: $row;
+  @include prefix(grid-template-columns, $column, ms);
+  @include prefix(grid-template-rows, $row, ms);
 }
