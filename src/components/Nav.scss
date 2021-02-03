@@ -3,11 +3,22 @@
 @import "../styleScss/mixIn.scss";
 
 .head-section {
-  background: url("../imgs/hero-img.png") $grey no-repeat center;
+  background: url("../imgs/hero-img.png") pink no-repeat center;
   @include prefix(background-size, cover, webkit moz o);
   background-attachment: fixed;
   height: 90vh;
   width: 100vw;
+}
+@supports (-webkit-touch-callout: none) {
+  .head-section {
+    background-attachment: scroll;
+  }
+}
+
+@supports not (-webkit-touch-callout: none) {
+  .head-section {
+    background-attachment: fixed;
+  }
 }
 .nav-bar {
   padding-top: 5px;

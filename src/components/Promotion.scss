@@ -13,6 +13,17 @@
   background-attachment: fixed;
   width: 100vw;
 }
+@supports (-webkit-touch-callout: none) {
+  .wrap {
+    background-attachment: scroll;
+  }
+}
+
+@supports not (-webkit-touch-callout: none) {
+  .wrap {
+    background-attachment: fixed;
+  }
+}
 
 .img-size {
   width: 100%;
