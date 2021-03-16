@@ -4,8 +4,8 @@ import Menu from "./Menu";
 import Promotion from "./Promotion";
 import Review from "./Review";
 import WebFooter from "./Footer";
-import LogoIcon from "../icons/icon-logo.svg";
-import BrandName from "../icons/brand-name.gif";
+import LogoIcon from "../asset/icons/icon-logo.svg";
+import BrandName from "../asset/icons/brand-name.gif";
 import "./Nav.scss";
 import { motion } from "framer-motion";
 

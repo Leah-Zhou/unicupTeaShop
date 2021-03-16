@@ -1,9 +1,9 @@
 import React from "react";
-import Logo from "../icons/logo.svg";
-import EamilIcon from "../icons/email.svg";
-import ContactIcon from "../icons/contact.svg";
-import LocationIcon from "../icons/location.svg";
-import ClockIcon from "../icons/clock.svg";
+import Logo from "../asset/icons/logo.svg";
+import EamilIcon from "../asset/icons/email.svg";
+import ContactIcon from "../asset/icons/contact.svg";
+import LocationIcon from "../asset/icons/location.svg";
+import ClockIcon from "../asset/icons/clock.svg";
 import { v4 as uuidv4 } from "uuid";
 import "./Footer.scss";
 

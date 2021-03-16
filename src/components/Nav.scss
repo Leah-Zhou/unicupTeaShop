@@ -3,7 +3,7 @@
 @import "../styleScss/mixIn.scss";
 
 .head-section {
-  background: url("../imgs/hero-img.png") $lightGrey no-repeat center;
+  background: url("../asset/imgs/hero-img.png") $lightGrey no-repeat center;
   @include prefix(background-size, cover, webkit moz o);
   background-attachment: fixed;
   height: 90vh;
@@ -138,7 +138,7 @@
   color: $orange;
   &:before {
     content: " ";
-    background-image: url("../icons/planet.svg");
+    background-image: url("../asset/icons/planet.svg");
     @include planetStyle(-10px, -50px, 1, 40px);
     display: inline-block;
     background-size: contain;

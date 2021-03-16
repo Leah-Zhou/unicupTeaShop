@@ -1,8 +1,8 @@
 import React, { forwardRef, useEffect } from "react";
 import "./Promotion.scss";
-import Plante from "../icons/planet.svg";
-import imgTop from "../imgs/drink-top.png";
-import imgBottom from "../imgs/drink-bottom.png";
+import Plante from "../asset/icons/planet.svg";
+import imgTop from "../asset/imgs/drink-top.png";
+import imgBottom from "../asset/imgs/drink-bottom.png";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import AOS from "aos";

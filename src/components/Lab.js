@@ -1,7 +1,7 @@
 import React, { forwardRef, useEffect } from "react";
 import LabData from "../json/Lab.json";
 import { v4 as uuidv4 } from "uuid";
-import Plante from "../icons/planet.svg";
+import Plante from "../asset/icons/planet.svg";
 import "./Lab.scss";
 import "aos/dist/aos.css";
 import environment from "../asset/imgs/lab.jpg";
