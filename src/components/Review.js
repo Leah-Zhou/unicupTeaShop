@@ -4,13 +4,43 @@ import "./Review.scss";
 import { v4 as uuidv4 } from "uuid";
 import Plante from "../icons/planet.svg";
 import "aos/dist/aos.css";
+import reviewOne from "../asset/imgs/review-one.png";
+import reviewTwo from "../asset/imgs/review-two.png";
+import reviewThree from "../asset/imgs/review-three.png";
+import reviewFour from "../asset/imgs/review-four.png";
 
 const Review = (props, ref) => {
-  const ReviewInfo = ReviewData.review;
+  const reviewInfo = ReviewData.review;
+  // const reviewPhoto= [reviewOne, reviewTwo, reviewThree, reviewFour];
+  const reviewData = [
+    {
+      img: reviewOne,
+      abstract: reviewInfo[0].abstract,
+      user: reviewInfo[0].user,
+      comment: reviewInfo[0].review,
+    },
+    {
+      img: reviewTwo,
+      abstract: reviewInfo[1].abstract,
+      user: reviewInfo[1].user,
+      comment: reviewInfo[1].review,
+    },
+    {
+      img: reviewThree,
+      abstract: reviewInfo[2].abstract,
+      user: reviewInfo[2].user,
+      comment: reviewInfo[2].review,
+    },
+    {
+      img: reviewFour,
+      abstract: reviewInfo[3].abstract,
+      user: reviewInfo[3].user,
+      comment: reviewInfo[3].review,
+    },
+  ];
   const scrollElement = props.node;
   const correspondOpt = props.correspond;
   const options = document.querySelectorAll(".nav-bar li");
-
   const parentObserver = new IntersectionObserver(
     ([entry]) => {
       if (entry.isIntersecting) {
@@ -41,7 +71,7 @@ const Review = (props, ref) => {
         <h1>WE ARE HAPPY YOU LIKE IT!</h1>
       </section>
       <section className="review-content">
-        {ReviewInfo.map((review) => (
+        {reviewData.map((review) => (
           <ul
             key={uuidv4()}
             className="each-review"
@@ -49,14 +79,11 @@ const Review = (props, ref) => {
             data-aos-anchor-placement="top-center"
           >
             <li>
-              <img
-                src={process.env.PUBLIC_URL + review.img}
-                alt="user review"
-              />
+              <img src={review.img} alt="customer review" />
             </li>
             <li>
               <p style={{ fontWeight: 700 }}>"{review.abstract}"</p>
-              <p style={{ margin: "10px" }}>{review.review}</p>
+              <p style={{ margin: "10px" }}>{review.comment}</p>
               <p>From dear customer {review.user}</p>
             </li>
           </ul>
