@@ -56,7 +56,7 @@ const Review = (props, ref) => {
             </li>
             <li>
               <p style={{ fontWeight: 700 }}>"{review.abstract}"</p>
-              <p>{review.review}</p>
+              <p style={{ margin: "10px" }}>{review.review}</p>
               <p>From dear customer {review.user}</p>
             </li>
           </ul>

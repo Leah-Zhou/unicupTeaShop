@@ -8,7 +8,7 @@
       @content;
     }
   } @else if $point == "large device" {
-    @media (min-width: 1150px) {
+    @media (min-width: 950px) {
       @content;
     }
   }
