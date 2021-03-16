@@ -76,8 +76,11 @@
   }
 }
 .fix-position {
-  overflow: hidden;
-  height: 100%;
+  @include breakpoint("small device") {
+    overflow: hidden;
+    height: 100%;
+  }
+  overflow: auto;
 }
 .menu-icon {
   @include breakpoint("small device") {

@@ -49,10 +49,12 @@ const NavBar = () => {
   const options = document.querySelectorAll(".nav-bar li");
   const ToggleMenu = () => {
     setDisplay((perv) => !perv);
+    console.log(display);
   };
 
   function scrollHandler(el, listRef) {
     ToggleMenu();
+    console.log(display);
     el.scrollIntoView({ behavior: "smooth" });
     options.forEach((opt) => opt.classList.remove("select-opt"));
     listRef.current.classList.add("select-opt");
