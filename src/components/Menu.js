@@ -2,7 +2,7 @@ import React, { forwardRef, useEffect } from "react";
 import MenuJson from "../json/Menu.json";
 import { v4 as uuidv4 } from "uuid";
 import Plante from "../asset/icons/planet.svg";
-import "./Menu.scss";
+import "../styleScss/Menu.scss";
 import "aos/dist/aos.css";
 import milkTea from "../asset/imgs/milktea.png";
 import tea from "../asset/imgs/tea.png";

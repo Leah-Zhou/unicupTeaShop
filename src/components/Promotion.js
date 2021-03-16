@@ -1,5 +1,5 @@
 import React, { forwardRef, useEffect } from "react";
-import "./Promotion.scss";
+import "../styleScss/Promotion.scss";
 import Plante from "../asset/icons/planet.svg";
 import imgTop from "../asset/imgs/drink-top.png";
 import imgBottom from "../asset/imgs/drink-bottom.png";

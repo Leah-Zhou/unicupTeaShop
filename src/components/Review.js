@@ -1,6 +1,6 @@
 import React, { forwardRef, useEffect } from "react";
 import ReviewData from "../json/Review.json";
-import "./Review.scss";
+import "../styleScss/Review.scss";
 import { v4 as uuidv4 } from "uuid";
 import Plante from "../asset/icons/planet.svg";
 import "aos/dist/aos.css";

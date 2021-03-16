@@ -5,7 +5,7 @@ import ContactIcon from "../asset/icons/contact.svg";
 import LocationIcon from "../asset/icons/location.svg";
 import ClockIcon from "../asset/icons/clock.svg";
 import { v4 as uuidv4 } from "uuid";
-import "./Footer.scss";
+import "../styleScss/Footer.scss";
 
 const WebFooter = () => {
   const BusinessInfo = [

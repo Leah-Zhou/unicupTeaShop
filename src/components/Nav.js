@@ -6,7 +6,7 @@ import Review from "./Review";
 import WebFooter from "./Footer";
 import LogoIcon from "../asset/icons/icon-logo.svg";
 import BrandName from "../asset/icons/brand-name.gif";
-import "./Nav.scss";
+import "../styleScss/Nav.scss";
 import { motion } from "framer-motion";
 
 const closeVariant = {
