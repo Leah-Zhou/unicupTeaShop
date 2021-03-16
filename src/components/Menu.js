@@ -4,9 +4,32 @@ import { v4 as uuidv4 } from "uuid";
 import Plante from "../icons/planet.svg";
 import "./Menu.scss";
 import "aos/dist/aos.css";
+import milkTea from "../asset/imgs/milktea.png";
+import tea from "../asset/imgs/tea.png";
+import juice from "../asset/imgs/juice.png";
 
 function MenuComponent(props, ref) {
   const menuInfo = MenuJson.opts;
+  const menuOptions = [
+    {
+      title: menuInfo[0].title,
+      content: menuInfo[0].content,
+      img: juice,
+      alt: menuInfo[0].alt,
+    },
+    {
+      title: menuInfo[1].title,
+      content: menuInfo[1].content,
+      img: milkTea,
+      alt: menuInfo[1].alt,
+    },
+    {
+      title: menuInfo[2].title,
+      content: menuInfo[2].content,
+      img: tea,
+      alt: menuInfo[2].alt,
+    },
+  ];
   const scrollElement = props.node;
   const correspondOpt = props.correspond;
   const options = document.querySelectorAll(".nav-bar li");
@@ -42,7 +65,7 @@ function MenuComponent(props, ref) {
           <h1>OUR UNIQUE MENU</h1>
         </section>
 
-        {menuInfo.map((each) => (
+        {menuOptions.map((each) => (
           <div
             key={uuidv4()}
             className="menu-opt"
@@ -51,7 +74,7 @@ function MenuComponent(props, ref) {
             data-aos-anchor-placement="top-center"
           >
             <section className="menu-category">
-              <img src={process.env.PUBLIC_URL + each.img} alt={each.title} />
+              <img src={each.img} alt={each.alt} />
               <p style={{ fontWeight: "600", fontSize: "23px" }}>
                 {each.title}
               </p>

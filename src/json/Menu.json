@@ -1,7 +1,7 @@
 {
   "opts": [
     {
-      "img": "/imgs/juice.png",
+      "alt": "juice series",
       "delay": "1",
       "title": "Fresh Fruit Tea/Juice",
       "content": [
@@ -15,7 +15,7 @@
     },
 
     {
-      "img": "/imgs/milktea.png",
+      "alt": "milk tea series",
       "delay": "3",
       "title": "Milk Tea Series",
       "content": [
@@ -29,7 +29,7 @@
     },
 
     {
-      "img": "/imgs/tea.png",
+      "alt": "tea series",
       "delay": "5",
       "title": "Original Brewed Tea",
       "content": [
