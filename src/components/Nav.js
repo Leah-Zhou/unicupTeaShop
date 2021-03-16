@@ -21,11 +21,12 @@ const openVariant = {
   initial: (variable) => ({ x: variable }),
 };
 const titleVariant = {
-  initial: { opacity: 0, scale: 0.5, y: "-50%", x: "-50%" },
+  initial: { opacity: 0, y: "-30%", x: "-50%" },
   animate: {
     opacity: 1,
-    scale: 1.1,
-    transition: { delay: 0.5, duration: 2, ease: "circOut" },
+    y: "-50%",
+    // scale: 1.1,
+    transition: { delay: 0.5, duration: 1.6, ease: "easeOut" },
   },
 };
 

@@ -22,7 +22,7 @@
 }
 .nav-bar {
   padding-top: 5px;
-  background-color: $lightOrange;
+  background-color: rgba($lightOrange, 0.9);
   width: 100%;
   position: fixed;
   z-index: 5;
@@ -60,6 +60,9 @@
   }
   @include breakpoint("medium device") {
     @include flexStyle(row, space-around, auto);
+  }
+  li {
+    font-size: clamp(16px, 1.5vw, 17px);
   }
 }
 
