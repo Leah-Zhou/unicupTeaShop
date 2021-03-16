@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/unicupTeaShop/static/css/main.ceb5495e.chunk.css",
-    "main.js": "/unicupTeaShop/static/js/main.030800dd.chunk.js",
-    "main.js.map": "/unicupTeaShop/static/js/main.030800dd.chunk.js.map",
+    "main.css": "/unicupTeaShop/static/css/main.7b8d6744.chunk.css",
+    "main.js": "/unicupTeaShop/static/js/main.334ed9c9.chunk.js",
+    "main.js.map": "/unicupTeaShop/static/js/main.334ed9c9.chunk.js.map",
     "runtime-main.js": "/unicupTeaShop/static/js/runtime-main.47347bad.js",
     "runtime-main.js.map": "/unicupTeaShop/static/js/runtime-main.47347bad.js.map",
     "static/css/2.ec02d681.chunk.css": "/unicupTeaShop/static/css/2.ec02d681.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.1065b738.chunk.js.map": "/unicupTeaShop/static/js/2.1065b738.chunk.js.map",
     "index.html": "/unicupTeaShop/index.html",
     "static/css/2.ec02d681.chunk.css.map": "/unicupTeaShop/static/css/2.ec02d681.chunk.css.map",
-    "static/css/main.ceb5495e.chunk.css.map": "/unicupTeaShop/static/css/main.ceb5495e.chunk.css.map",
+    "static/css/main.7b8d6744.chunk.css.map": "/unicupTeaShop/static/css/main.7b8d6744.chunk.css.map",
     "static/js/2.1065b738.chunk.js.LICENSE.txt": "/unicupTeaShop/static/js/2.1065b738.chunk.js.LICENSE.txt",
     "static/media/brand-name.27147493.gif": "/unicupTeaShop/static/media/brand-name.27147493.gif",
     "static/media/clock.c17e6ae8.svg": "/unicupTeaShop/static/media/clock.c17e6ae8.svg",
@@ -28,7 +28,7 @@
     "static/js/runtime-main.47347bad.js",
     "static/css/2.ec02d681.chunk.css",
     "static/js/2.1065b738.chunk.js",
-    "static/css/main.ceb5495e.chunk.css",
-    "static/js/main.030800dd.chunk.js"
+    "static/css/main.7b8d6744.chunk.css",
+    "static/js/main.334ed9c9.chunk.js"
   ]
 }
