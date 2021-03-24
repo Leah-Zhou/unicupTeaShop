@@ -3,7 +3,7 @@
     {
       "alt": "juice series",
       "delay": "1",
-      "title": "Fresh Fruit Tea/Juice",
+      "title": "FRESH FRUIT TEA /JUICE",
       "content": [
         { "name": "Orange Lulu Lemon Tea", "price": "5.75" },
         { "name": "Passion Fruit Tea", "price": "5.75" },
@@ -15,7 +15,7 @@
     },
 
     {
-      "alt": "milk tea series",
+      "alt": "MILK TEA SERIES",
       "delay": "3",
       "title": "Milk Tea Series",
       "content": [
@@ -29,7 +29,7 @@
     },
 
     {
-      "alt": "tea series",
+      "alt": "TEA SERIES",
       "delay": "5",
       "title": "Original Brewed Tea",
       "content": [
