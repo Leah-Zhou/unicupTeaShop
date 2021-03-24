@@ -118,9 +118,9 @@
     margin: 0 auto;
   }
   p {
-    font-size: clamp(0.8rem, 2vw, 1.2rem);
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
     display: inline-block;
-    font-weight: 600;
+    font-weight: 800;
     letter-spacing: 2px;
     color: $blue;
   }

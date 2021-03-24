@@ -145,7 +145,7 @@ const NavBar = () => {
         animate="animate"
       >
         <img src={BrandName} alt="unicup logo" />
-        <h2 style={{ letterSpacing: "1px" }}>The Unique Tea Universe</h2>
+        <p className="slogan">The Unique Tea Universe</p>
       </motion.div>
 
       <BrandIntro ref={setLabRef} node={labRef} correspond={optLabRef} />
