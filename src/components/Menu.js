@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from "uuid";
 import Plante from "../asset/icons/planet.svg";
 import "../styleScss/Menu.scss";
 import "aos/dist/aos.css";
-import milkTea from "../asset/imgs/milktea.png";
+import milkTea from "../asset/imgs/milk-tea.png";
 import tea from "../asset/imgs/tea.png";
 import juice from "../asset/imgs/juice.png";
 
@@ -16,18 +16,21 @@ function MenuComponent(props, ref) {
       content: menuInfo[0].content,
       img: juice,
       alt: menuInfo[0].alt,
+      bgColor: "circle-orange",
     },
     {
       title: menuInfo[1].title,
       content: menuInfo[1].content,
       img: milkTea,
       alt: menuInfo[1].alt,
+      bgColor: "circle-brown",
     },
     {
       title: menuInfo[2].title,
       content: menuInfo[2].content,
       img: tea,
       alt: menuInfo[2].alt,
+      bgColor: "circle-green",
     },
   ];
   const scrollElement = props.node;
@@ -74,10 +77,13 @@ function MenuComponent(props, ref) {
             data-aos-anchor-placement="top-center"
           >
             <section className="menu-category">
-              <img src={each.img} alt={each.alt} />
-              <p style={{ fontWeight: "600", fontSize: "23px" }}>
+              <div style={{ position: "relative" }}>
+                <img src={each.img} alt={each.alt} />
+                <div className={each.bgColor}></div>
+              </div>
+              <h3 style={{ fontWeight: "800", fontSize: "16px" }}>
                 {each.title}
-              </p>
+              </h3>
             </section>
             <section>
               {each.content.map((item) => (

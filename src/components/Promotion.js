@@ -21,7 +21,7 @@ const imgVariants = {
   animate: {
     x: 0,
     opacity: 1,
-    transition: { duration: 1, ease: "easeIn", delay: 1 },
+    transition: { duration: 1, ease: "easeIn", delay: 0.3 },
   },
   initial: (i) => ({
     x: i,

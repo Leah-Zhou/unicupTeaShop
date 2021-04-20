@@ -14,13 +14,39 @@
   }
 }
 .menu-category {
-  @include gridStyle(auto, 2fr 1fr);
-  justify-items: center;
+  @include flexStyle(column, center, auto);
+  // @include gridStyle(auto, 2fr 1fr);
+  // justify-items: center;
   img {
+    display: block;
     width: 100%;
-    max-width: 350px;
+    max-width: 200px;
     height: auto;
   }
+}
+%circle {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border-radius: 50%;
+  top: 10%;
+  left: 0%;
+  z-index: -2;
+  // background-color: pink;
+}
+.circle-green {
+  @extend %circle;
+  background-color: $lightGreen;
+  opacity: 0.65;
+}
+.circle-brown {
+  @extend %circle;
+  background-color: $peelOrange;
+  opacity: 0.77;
+}
+.circle-orange {
+  @extend %circle;
+  background-color: $lightOrange;
 }
 .price-list {
   @include flexStyle(row, flex-end, auto);

@@ -2,27 +2,26 @@
 @import "../styleScss/global.scss";
 @import "../styleScss/mixIn.scss";
 
-.head-section {
-  background: url("../asset/imgs/hero-img.png") $lightGrey no-repeat center;
-  @include prefix(background-size, cover, webkit moz o);
-  background-attachment: fixed;
-  height: 90vh;
-  width: 100vw;
-}
-@supports (-webkit-touch-callout: none) {
-  .head-section {
-    background-attachment: scroll;
-  }
-}
+// .head-section {
+//   // background: url("../asset/imgs/hero-img.png") $lightGrey no-repeat center;
+//   // @include prefix(background-size, cover, webkit moz o);
+//   // background-attachment: fixed;
+//   height: 90vh;
+//   width: 100vw;
+// }
+// @supports (-webkit-touch-callout: none) {
+//   .head-section {
+//     background-attachment: scroll;
+//   }
+// }
 
-@supports not (-webkit-touch-callout: none) {
-  .head-section {
-    background-attachment: fixed;
-  }
-}
+// @supports not (-webkit-touch-callout: none) {
+//   .head-section {
+//     background-attachment: fixed;
+//   }
+// }
 .nav-bar {
   padding-top: 5px;
-  background-color: $lightOrange;
   width: 100%;
   position: fixed;
   z-index: 5;
@@ -30,6 +29,7 @@
   left: 0;
   @include flexStyle(row, flex-end, auto);
   @include breakpoint("small device") {
+    background-color: $lightOrange;
     flex-wrap: wrap;
     justify-items: end;
   }
@@ -59,13 +59,17 @@
     width: 100vw;
   }
   @include breakpoint("medium device") {
-    @include flexStyle(row, space-around, auto);
-  }
-  li {
-    font-size: clamp(16px, 1.5vw, 17px);
+    @include flexStyle(row, flex-end, auto);
+    margin-right: 100px;
   }
 }
-
+.nav-item {
+  font-size: clamp(14px, 1.5vw, 15px);
+  @include breakpoint("medium device") {
+    margin-left: 120px;
+    display: inline-block;
+  }
+}
 .hide {
   @include breakpoint("small device") {
     @include flexStyle(column, space-around, 0vh);
@@ -74,7 +78,8 @@
     transition: height 0.2s ease-out;
   }
   @include breakpoint("medium device") {
-    @include flexStyle(row, space-around, auto);
+    @include flexStyle(row, flex-end, auto);
+    margin-right: 100px;
     z-index: 5;
   }
 }
@@ -102,25 +107,22 @@
   margin-left: 10px;
 }
 .logo-name {
-  position: absolute;
-  top: 30%;
-  left: 50%;
   text-align: center;
-  max-width: 100%;
+  // max-width: 100%;
   img {
     @include breakpoint("small device") {
-      width: 350px;
+      width: 300px;
     }
-    width: 100%;
+    // max-width: 100%;
     height: auto;
     max-width: 500px;
     display: block;
-    margin: 0 auto;
+    // margin: 0 auto;
   }
   p {
     font-size: clamp(1rem, 1.5vw, 1.3rem);
     display: inline-block;
-    font-weight: 800;
+    font-weight: 400;
     letter-spacing: 2px;
     color: $blue;
   }
@@ -155,4 +157,15 @@
 }
 .menu-i-circle {
   fill: $orange;
+}
+.hero-section {
+  margin-top: 150px;
+  @include flexStyle(column, center, auto);
+  @include breakpoint("medium device") {
+    @include flexStyle(row, space-around, auto);
+  }
+}
+.hero-img {
+  width: 100%;
+  max-width: 400px;
 }

@@ -6,6 +6,7 @@ import Review from "./Review";
 import WebFooter from "./Footer";
 import LogoIcon from "../asset/icons/icon-logo.svg";
 import BrandName from "../asset/icons/brand-name.gif";
+import heroImg from "../asset/imgs/bbtea-hero.png";
 import "../styleScss/Nav.scss";
 import { motion } from "framer-motion";
 
@@ -20,15 +21,15 @@ const openVariant = {
   animate: { x: 0, transition: "1s ease" },
   initial: (variable) => ({ x: variable }),
 };
-const titleVariant = {
-  initial: { opacity: 0, y: "-30%", x: "-50%" },
-  animate: {
-    opacity: 1,
-    y: "-50%",
-    // scale: 1.1,
-    transition: { delay: 0.5, duration: 1.6, ease: "easeOut" },
-  },
-};
+// const titleVariant = {
+//   initial: { opacity: 0, y: "-30%", x: "-50%" },
+//   animate: {
+//     opacity: 1,
+//     y: "-50%",
+//     // scale: 1.1,
+//     transition: { delay: 0.5, duration: 1.6, ease: "easeOut" },
+//   },
+// };
 
 const NavBar = () => {
   const [menuRef, setMenuRef] = useState(null);
@@ -71,83 +72,86 @@ const NavBar = () => {
 
   return (
     <>
-      <div className="head-section">
-        <div className="nav-bar">
-          <img src={LogoIcon} alt="logo icon" className="logo-icon" />
-          <div className="menu-icon" onClick={ToggleMenu}>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-              <title>menu</title>
-              <g id="menu">
-                <g id="line-top">
-                  <motion.path
-                    variants={display ? closeVariant : openVariant}
-                    initial="initial"
-                    animate="animate"
-                    custom={20}
-                    className="menu-i-line"
-                    d="M3.858,7.8H42.123a1.5,1.5,0,0,0,0-3H3.858a1.5,1.5,0,0,0,0,3Z"
-                  />
-                </g>
-                <g id="line-middle">
-                  <path
-                    className="menu-i-line"
-                    d="M4.362,22.975H33.37a1.5,1.5,0,0,0,0-3H4.362a1.5,1.5,0,0,0,0,3Z"
-                  />
-                </g>
-                <g id="line-bottom">
-                  <motion.path
-                    variants={display ? closeVariant : openVariant}
-                    initial="initial"
-                    animate="animate"
-                    custom={-20}
-                    className="menu-i-line"
-                    d="M17.136,37.784H42.123a1.5,1.5,0,0,0,0-3H17.136a1.5,1.5,0,0,0,0,3Z"
-                  />
-                </g>
-                <motion.circle
+      <div className="nav-bar">
+        <img src={LogoIcon} alt="logo icon" className="logo-icon" />
+        <div className="menu-icon" onClick={ToggleMenu}>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+            <title>menu</title>
+            <g id="menu">
+              <g id="line-top">
+                <motion.path
+                  variants={display ? closeVariant : openVariant}
+                  initial="initial"
+                  animate="animate"
+                  custom={20}
+                  className="menu-i-line"
+                  d="M3.858,7.8H42.123a1.5,1.5,0,0,0,0-3H3.858a1.5,1.5,0,0,0,0,3Z"
+                />
+              </g>
+              <g id="line-middle">
+                <path
+                  className="menu-i-line"
+                  d="M4.362,22.975H33.37a1.5,1.5,0,0,0,0-3H4.362a1.5,1.5,0,0,0,0,3Z"
+                />
+              </g>
+              <g id="line-bottom">
+                <motion.path
                   variants={display ? closeVariant : openVariant}
                   initial="initial"
                   animate="animate"
                   custom={-20}
-                  id="cirlce-b"
-                  className="menu-i-circle"
-                  cx="7.086"
-                  cy="36.826"
-                  r="4.086"
-                />
-                <circle
-                  id="circle-m"
-                  className="menu-i-circle"
-                  cx="42.123"
-                  cy="21.584"
-                  r="3.877"
+                  className="menu-i-line"
+                  d="M17.136,37.784H42.123a1.5,1.5,0,0,0,0-3H17.136a1.5,1.5,0,0,0,0,3Z"
                 />
               </g>
-            </svg>
-          </div>
-          <ul className={display ? "show" : "hide"}>
-            {NavOptions.map((each) => (
-              <li
-                ref={each.myRef}
-                key={each.name}
-                onClick={() => scrollHandler(each.call, each.myRef)}
-              >
-                {each.name}
-              </li>
-            ))}
-          </ul>
+              <motion.circle
+                variants={display ? closeVariant : openVariant}
+                initial="initial"
+                animate="animate"
+                custom={-20}
+                id="cirlce-b"
+                className="menu-i-circle"
+                cx="7.086"
+                cy="36.826"
+                r="4.086"
+              />
+              <circle
+                id="circle-m"
+                className="menu-i-circle"
+                cx="42.123"
+                cy="21.584"
+                r="3.877"
+              />
+            </g>
+          </svg>
+        </div>
+        <ul className={display ? "show" : "hide"}>
+          {NavOptions.map((each) => (
+            <li
+              className="nav-item"
+              ref={each.myRef}
+              key={each.name}
+              onClick={() => scrollHandler(each.call, each.myRef)}
+            >
+              {each.name}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="hero-section">
+        <div className="logo-name">
+          <img src={BrandName} alt="unicup logo" />
+          <p className="slogan">The Unique Bubble Tea Universe</p>
+        </div>
+        <div>
+          <img
+            src={heroImg}
+            alt="unicup bubble tea product"
+            className="hero-img"
+          />
         </div>
       </div>
-      <motion.div
-        className="logo-name"
-        variants={titleVariant}
-        initial="initial"
-        animate="animate"
-      >
-        <img src={BrandName} alt="unicup logo" />
-        <p className="slogan">The Unique Tea Universe</p>
-      </motion.div>
-
       <BrandIntro ref={setLabRef} node={labRef} correspond={optLabRef} />
       <Menu ref={setMenuRef} node={menuRef} correspond={optMenuRef} />
       <Promotion
