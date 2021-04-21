@@ -2,24 +2,6 @@
 @import "../styleScss/global.scss";
 @import "../styleScss/mixIn.scss";
 
-// .head-section {
-//   // background: url("../asset/imgs/hero-img.png") $lightGrey no-repeat center;
-//   // @include prefix(background-size, cover, webkit moz o);
-//   // background-attachment: fixed;
-//   height: 90vh;
-//   width: 100vw;
-// }
-// @supports (-webkit-touch-callout: none) {
-//   .head-section {
-//     background-attachment: scroll;
-//   }
-// }
-
-// @supports not (-webkit-touch-callout: none) {
-//   .head-section {
-//     background-attachment: fixed;
-//   }
-// }
 .nav-bar {
   padding-top: 5px;
   width: 100%;
@@ -27,9 +9,9 @@
   z-index: 5;
   top: 0;
   left: 0;
+  background-color: #fdfef0;
   @include flexStyle(row, flex-end, auto);
   @include breakpoint("small device") {
-    background-color: $lightOrange;
     flex-wrap: wrap;
     justify-items: end;
   }
@@ -108,16 +90,14 @@
 }
 .logo-name {
   text-align: center;
-  // max-width: 100%;
   img {
     @include breakpoint("small device") {
       width: 300px;
     }
-    // max-width: 100%;
     height: auto;
+    width: 100%;
     max-width: 500px;
     display: block;
-    // margin: 0 auto;
   }
   p {
     font-size: clamp(1rem, 1.5vw, 1.3rem);
@@ -162,10 +142,18 @@
   margin-top: 150px;
   @include flexStyle(column, center, auto);
   @include breakpoint("medium device") {
-    @include flexStyle(row, space-around, auto);
+    @include flexStyle(row, center, auto);
+    align-content: center;
+    align-items: center;
   }
 }
 .hero-img {
+  min-width: 200px;
   width: 100%;
-  max-width: 400px;
+  max-width: 580px;
+  z-index: 3;
+  position: relative;
+  @include breakpoint("large device") {
+    margin-left: 130px;
+  }
 }

@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import BrandIntro from "./Lab";
 import Menu from "./Menu";
 import Promotion from "./Promotion";
+import Plante from "../asset/icons/planet.png";
 import Review from "./Review";
 import WebFooter from "./Footer";
 import LogoIcon from "../asset/icons/icon-logo.svg";
@@ -21,15 +22,14 @@ const openVariant = {
   animate: { x: 0, transition: "1s ease" },
   initial: (variable) => ({ x: variable }),
 };
-// const titleVariant = {
-//   initial: { opacity: 0, y: "-30%", x: "-50%" },
-//   animate: {
-//     opacity: 1,
-//     y: "-50%",
-//     // scale: 1.1,
-//     transition: { delay: 0.5, duration: 1.6, ease: "easeOut" },
-//   },
-// };
+const titleVariant = {
+  initial: { opacity: 0, y: "-20%" },
+  animate: {
+    opacity: 1,
+    y: "-50%",
+    transition: { delay: 0.5, duration: 1.4, ease: "easeOut" },
+  },
+};
 
 const NavBar = () => {
   const [menuRef, setMenuRef] = useState(null);
@@ -43,7 +43,7 @@ const NavBar = () => {
 
   const [display, setDisplay] = useState(false);
   const NavOptions = [
-    { name: "LAB", call: labRef, myRef: optLabRef },
+    { name: "TEA LAB", call: labRef, myRef: optLabRef },
     { name: "MENU", call: menuRef, myRef: optMenuRef },
     { name: "PROMOTION", call: promotionRef, myRef: optPromoteRef },
     { name: "REVIEWS", call: reviewRef, myRef: optReviewRef },
@@ -140,16 +140,24 @@ const NavBar = () => {
       </div>
 
       <div className="hero-section">
-        <div className="logo-name">
+        <motion.div
+          className="logo-name"
+          variants={titleVariant}
+          initial="initial"
+          animate="animate"
+        >
           <img src={BrandName} alt="unicup logo" />
-          <p className="slogan">The Unique Bubble Tea Universe</p>
-        </div>
-        <div>
+          <p>The Unique Bubble Tea Universe</p>
+        </motion.div>
+        <div style={{ position: "relative" }}>
+          <div className="circle-bg"></div>
           <img
             src={heroImg}
             alt="unicup bubble tea product"
             className="hero-img"
           />
+          <img src={Plante} alt="planet icon" className="float top-right" />
+          {/* <img src={Plante} alt="planet icon" className="float bottom-hide" /> */}
         </div>
       </div>
       <BrandIntro ref={setLabRef} node={labRef} correspond={optLabRef} />

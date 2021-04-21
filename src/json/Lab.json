@@ -3,20 +3,20 @@
     {
       "img": "/imgs/lab.jpg",
       "alt": "lab environment",
-      "title": "SPACIOUS LAB UNIVERSE",
-      "content": "In Unicup bubble teashop, you are the professionalist of making tea drinks. We provide a tea illustration program for all tea lovers.You could create your special tea drinks with the best materails we provided."
+      "title": "You could create your unique bubble tea here!",
+      "content": "In Unicup bubble teashop, you are the professionalist of making tea drinks. You could create your special tea drinks with the best materails we provided."
     },
 
     {
       "img": "/imgs/teaB.jpg",
       "alt": "tea leaf",
-      "title": "UNIQUE TEA BASE",
-      "content": "We make our tea base with highly selective tea leaves from Tai Wan. Take a sip of our tea drink and you will experience each tea has its own determined aroma and taste."
+      "title": "We use highly selective tea leaves from Tai Wan",
+      "content": "Take a sip of our tea drink and you will experience each tea has its own determined aroma and taste."
     },
     {
       "img": "/imgs/tappi.jpg",
       "alt": "tapioca",
-      "title": "WE CARE YOUR NEEDS",
+      "title": "We provide healthy options",
       "content": "We are providing healthy tapioca which is made of various healthy nuts cereal powder. The tapioca is more healthy , tasty, and chewy!"
     }
   ]

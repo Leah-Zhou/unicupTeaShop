@@ -1,0 +1,42 @@
+@import "../styleScss/colors.scss";
+@import "../styleScss/global.scss";
+@import "../styleScss/mixIn.scss";
+
+.drink-section {
+  @include flexStyle(column, center, auto);
+  margin: 0;
+  @include breakpoint("medium device") {
+    // @include gridStyle(1fr 1fr);
+    @include flexStyle(row, space-around, auto);
+    flex-wrap: wrap;
+  }
+}
+.each-drink {
+  position: relative;
+  margin: 2em;
+  background-color: salmon;
+  flex-basis: 300px;
+}
+.drink-img {
+  display: block;
+  position: relative;
+  height: auto;
+  width: 100%;
+  max-width: 250px;
+  z-index: 2;
+  left: -30%;
+}
+.expand-loop {
+  position: absolute;
+  bottom: 20%;
+  left: 40%;
+  z-index: 1;
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+  border-radius: 50%;
+  p {
+    transform: translate(30%, 250%);
+    position: absolute;
+  }
+}

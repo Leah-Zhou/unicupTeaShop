@@ -1,3 +1,4 @@
+@import "../styleScss/mixIn.scss";
 // logo and icon size
 $logoSizeSmall: 20px;
 $logoSizeLarge: 50px;
@@ -6,7 +7,7 @@ $footerIconSmall: 18px;
 $footerIconLarge: 25px;
 
 // font size
-$minLargeFont: 26px;
+$minLargeFont: 23px;
 $maxLargeFont: 46px;
 $minSmallFont: 16px;
 $maxSmallFont: 18px;
@@ -41,11 +42,12 @@ h1 {
   font-size: clamp($minLargeFont, 3vw, $maxLargeFont);
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
+  margin: 0;
 }
 h3 {
   font-size: clamp($minSmallFont, 1.5vw, $minLargeFont);
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 p {
   font-size: clamp($minP, 2vw, $maxP);
@@ -63,10 +65,11 @@ p {
   max-width: 80px;
 }
 .img-style {
-  max-width: 500px;
+  max-width: 600px;
   height: auto;
   width: 100%;
   margin: 0.5em;
+  box-shadow: $grey 4px 3px 6px;
 }
 
 @keyframes floating {
@@ -99,4 +102,19 @@ p {
 .float {
   animation: floating 5s infinite forwards ease-in;
   -webkit-animation: floating 5s infinite forwards ease-in;
+}
+.top-right {
+  @include planetStyle(20%, 85%, 1, 90%);
+  max-width: 120px;
+  z-index: 3;
+}
+.bottom-left {
+  @include planetStyle(80%, 50%, 1, 100px);
+  z-index: 5;
+}
+.bottom-hide {
+  @include planetStyle(50%, 15%, 1, 100%);
+  z-index: 1;
+  transform: rotate(120deg);
+  max-width: 60px;
 }

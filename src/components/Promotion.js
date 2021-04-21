@@ -1,6 +1,6 @@
 import React, { forwardRef, useEffect } from "react";
 import "../styleScss/Promotion.scss";
-import Plante from "../asset/icons/planet.svg";
+import Plante from "../asset/icons/planet.png";
 import imgTop from "../asset/imgs/drink-top.png";
 import imgBottom from "../asset/imgs/drink-bottom.png";
 import { useInView } from "react-intersection-observer";

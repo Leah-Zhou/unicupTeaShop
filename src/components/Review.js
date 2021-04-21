@@ -2,7 +2,7 @@ import React, { forwardRef, useEffect } from "react";
 import ReviewData from "../json/Review.json";
 import "../styleScss/Review.scss";
 import { v4 as uuidv4 } from "uuid";
-import Plante from "../asset/icons/planet.svg";
+import Plante from "../asset/icons/planet.png";
 import "aos/dist/aos.css";
 import reviewOne from "../asset/imgs/review-one.png";
 import reviewTwo from "../asset/imgs/review-two.png";
