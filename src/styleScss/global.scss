@@ -65,7 +65,7 @@ p {
   max-width: 80px;
 }
 .img-style {
-  max-width: 600px;
+  max-width: 560px;
   height: auto;
   width: 100%;
   margin: 0.5em;
@@ -103,11 +103,11 @@ p {
   animation: floating 5s infinite forwards ease-in;
   -webkit-animation: floating 5s infinite forwards ease-in;
 }
-.top-right {
-  @include planetStyle(20%, 85%, 1, 90%);
-  max-width: 120px;
-  z-index: 3;
-}
+// .top-right {
+//   @include planetStyle(70px, 160px, 1, 80%);
+//   max-width: 100px;
+//   z-index: 3;
+// }
 .bottom-left {
   @include planetStyle(80%, 50%, 1, 100px);
   z-index: 5;

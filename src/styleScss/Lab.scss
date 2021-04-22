@@ -11,6 +11,9 @@
   @include breakpoint("medium device") {
     margin: 0 3em;
   }
+  @include breakpoint("medium device") {
+    margin: 0 80px;
+  }
 }
 .lab-content {
   margin-bottom: 50px;

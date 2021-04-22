@@ -156,11 +156,11 @@ const NavBar = () => {
             alt="unicup bubble tea product"
             className="hero-img"
           />
-          <motion.img
+          {/* <motion.img
             src={Plante}
             alt="planet icon"
             className="float top-right"
-          />
+          /> */}
         </div>
       </div>
       <BrandIntro ref={setLabRef} node={labRef} correspond={optLabRef} />

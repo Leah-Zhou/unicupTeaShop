@@ -13,7 +13,7 @@ import creamTea from "../asset/imgs/cream-milktea.png";
 const StarDrinks = () => {
   const drinks = [
     {
-      name: "Jasmine Bubble Tea",
+      name: "Jasmine Milk Tea",
       img: milkTea,
     },
     { name: "Panna Cotta", img: panadaTea },
