@@ -69,7 +69,7 @@ const Promotion = (props, ref) => {
     <div ref={ref}>
       <section className="promote-title">
         <img src={Plante} alt="planet icon" className="planet-style float" />
-        <h1 data-aos="fade-up">PROMOTION</h1>
+        <h1 data-aos="fade-up">Promotion</h1>
       </section>
       <div className="wrap">
         <section

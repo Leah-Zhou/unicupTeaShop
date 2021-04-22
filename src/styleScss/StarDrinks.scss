@@ -14,8 +14,18 @@
 .each-drink {
   position: relative;
   margin: 2em;
-  background-color: salmon;
+  // background-color: salmon;
   flex-basis: 300px;
+  &:hover .expand-loop {
+    transform: translateX(120px) scale(1.2);
+  }
+  &:hover .drink-name {
+    opacity: 1;
+    transform: translate(10px, 70px);
+  }
+  &:hover .drink-img {
+    transform: scale(1.1) rotate(-10deg);
+  }
 }
 .drink-img {
   display: block;
@@ -25,18 +35,32 @@
   max-width: 250px;
   z-index: 2;
   left: -30%;
+  transition: transform 0.5s ease;
 }
 .expand-loop {
   position: absolute;
   bottom: 20%;
-  left: 40%;
+  left: 45%;
   z-index: 1;
   width: 200px;
   height: 200px;
-  background-color: pink;
+  background-color: $peelOrange;
   border-radius: 50%;
+  transition: transform 0.6s ease;
+  @include breakpoint("large device") {
+    bottom: 20%;
+    left: 0%;
+  }
+
   p {
-    transform: translate(30%, 250%);
-    position: absolute;
+    transform: translate(10px, 70px);
+    position: relative;
+    font-weight: 600;
+    font-size: clamp(16px, 2ve, 17px);
+    @include breakpoint("large device") {
+      opacity: 0;
+      transform: translate(-10px, 70px);
+      transition: all 0.5s ease;
+    }
   }
 }

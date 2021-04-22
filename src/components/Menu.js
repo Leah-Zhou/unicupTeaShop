@@ -63,13 +63,12 @@ function MenuComponent(props, ref) {
 
   return (
     <>
-      <StarDrinks />
       <div className="container" ref={ref}>
         <section data-aos="fade-right">
           <img src={Plante} alt="planet icon" className="planet-style float" />
-          <h1>OUR UNIQUE MENU</h1>
+          {/* <h1>OUR UNIQUE MENU</h1> */}
         </section>
-
+        <StarDrinks />
         {menuOptions.map((each) => (
           <div
             key={uuidv4()}

@@ -68,7 +68,7 @@ const Review = (props, ref) => {
     <div className="container" ref={ref}>
       <section data-aos="fade-right">
         <img src={Plante} alt="planet icon" className="planet-style float" />
-        <h1>WE ARE HAPPY YOU LIKE IT!</h1>
+        <h1>We are happy you like it!</h1>
       </section>
       <section className="review-content">
         {reviewData.map((review) => (

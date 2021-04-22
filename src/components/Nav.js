@@ -40,7 +40,6 @@ const NavBar = () => {
   const optMenuRef = useRef("menu");
   const optPromoteRef = useRef("promote");
   const optReviewRef = useRef("review");
-
   const [display, setDisplay] = useState(false);
   const NavOptions = [
     { name: "TEA LAB", call: labRef, myRef: optLabRef },
@@ -49,6 +48,7 @@ const NavBar = () => {
     { name: "REVIEWS", call: reviewRef, myRef: optReviewRef },
   ];
   const options = document.querySelectorAll(".nav-bar li");
+
   const ToggleMenu = () => {
     setDisplay((perv) => !perv);
     console.log(display);
@@ -156,8 +156,11 @@ const NavBar = () => {
             alt="unicup bubble tea product"
             className="hero-img"
           />
-          <img src={Plante} alt="planet icon" className="float top-right" />
-          {/* <img src={Plante} alt="planet icon" className="float bottom-hide" /> */}
+          <motion.img
+            src={Plante}
+            alt="planet icon"
+            className="float top-right"
+          />
         </div>
       </div>
       <BrandIntro ref={setLabRef} node={labRef} correspond={optLabRef} />
