@@ -72,11 +72,6 @@ const BrandIntro = (props, ref) => {
             alt="planet icon"
             className="planet-style float bottom-left"
           />
-          {/* <img
-            src={Plante}
-            alt="planet icon"
-            className="planet-style float bottom-left"
-          /> */}
         </section>
         {shopIntro.map((each) => (
           <div key={uuidv4()} className="lab-content">

@@ -27,7 +27,8 @@
 .intro-content {
   @extend %center-item;
   margin: 1em;
-  max-width: 600px;
+  max-width: 620px;
+  color: $darkGray;
   @include breakpoint("small device") {
     // @include flexStyle(column, center, auto);
     justify-self: center;

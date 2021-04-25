@@ -8,7 +8,7 @@ $footerIconLarge: 25px;
 
 // font size
 $minLargeFont: 23px;
-$maxLargeFont: 46px;
+$maxLargeFont: 40px;
 $minSmallFont: 16px;
 $maxSmallFont: 18px;
 $minP: 15px;
@@ -44,6 +44,7 @@ h1 {
   font-weight: 300;
   letter-spacing: 2px;
   margin: 0;
+  color: $darkGray;
 }
 h3 {
   font-size: clamp($minSmallFont, 1.5vw, $minLargeFont);
