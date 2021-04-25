@@ -41,6 +41,7 @@ const NavBar = () => {
   const optPromoteRef = useRef("promote");
   const optReviewRef = useRef("review");
   const [display, setDisplay] = useState(false);
+  const [clickItem, setClickItem] = useState(null);
   const NavOptions = [
     { name: "TEA LAB", call: labRef, myRef: optLabRef },
     { name: "MENU", call: menuRef, myRef: optMenuRef },
@@ -51,15 +52,16 @@ const NavBar = () => {
 
   const ToggleMenu = () => {
     setDisplay((perv) => !perv);
-    console.log(display);
+    // console.log(display);
   };
 
   function scrollHandler(el, listRef) {
     ToggleMenu();
-    // console.log(display);
     el.scrollIntoView({ behavior: "smooth" });
-    options.forEach((opt) => opt.classList.remove("select-opt"));
-    listRef.current.classList.add("select-opt");
+    // setClickItem(listRef.current);
+    // if (clickItem != null) {
+    //   clickItem.classList.remove("select-opt");
+    // }
   }
 
   useEffect(() => {
@@ -131,6 +133,7 @@ const NavBar = () => {
               className="nav-item"
               ref={each.myRef}
               key={each.name}
+              id={each.name}
               onClick={() => scrollHandler(each.call, each.myRef)}
             >
               {each.name}
