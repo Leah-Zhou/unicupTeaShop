@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/unicupTeaShop/static/css/main.c21c6db8.chunk.css",
-    "main.js": "/unicupTeaShop/static/js/main.4bd74be4.chunk.js",
-    "main.js.map": "/unicupTeaShop/static/js/main.4bd74be4.chunk.js.map",
+    "main.css": "/unicupTeaShop/static/css/main.95cd6ee8.chunk.css",
+    "main.js": "/unicupTeaShop/static/js/main.7328efe5.chunk.js",
+    "main.js.map": "/unicupTeaShop/static/js/main.7328efe5.chunk.js.map",
     "runtime-main.js": "/unicupTeaShop/static/js/runtime-main.47347bad.js",
     "runtime-main.js.map": "/unicupTeaShop/static/js/runtime-main.47347bad.js.map",
     "static/css/2.ec02d681.chunk.css": "/unicupTeaShop/static/css/2.ec02d681.chunk.css",
-    "static/js/2.95bde7d3.chunk.js": "/unicupTeaShop/static/js/2.95bde7d3.chunk.js",
-    "static/js/2.95bde7d3.chunk.js.map": "/unicupTeaShop/static/js/2.95bde7d3.chunk.js.map",
+    "static/js/2.6ca0dbf3.chunk.js": "/unicupTeaShop/static/js/2.6ca0dbf3.chunk.js",
+    "static/js/2.6ca0dbf3.chunk.js.map": "/unicupTeaShop/static/js/2.6ca0dbf3.chunk.js.map",
     "index.html": "/unicupTeaShop/index.html",
     "static/css/2.ec02d681.chunk.css.map": "/unicupTeaShop/static/css/2.ec02d681.chunk.css.map",
-    "static/css/main.c21c6db8.chunk.css.map": "/unicupTeaShop/static/css/main.c21c6db8.chunk.css.map",
-    "static/js/2.95bde7d3.chunk.js.LICENSE.txt": "/unicupTeaShop/static/js/2.95bde7d3.chunk.js.LICENSE.txt",
+    "static/css/main.95cd6ee8.chunk.css.map": "/unicupTeaShop/static/css/main.95cd6ee8.chunk.css.map",
+    "static/js/2.6ca0dbf3.chunk.js.LICENSE.txt": "/unicupTeaShop/static/js/2.6ca0dbf3.chunk.js.LICENSE.txt",
     "static/media/bbtea-hero.d8b1b962.png": "/unicupTeaShop/static/media/bbtea-hero.d8b1b962.png",
     "static/media/brand-name.27147493.gif": "/unicupTeaShop/static/media/brand-name.27147493.gif",
     "static/media/clock.c17e6ae8.svg": "/unicupTeaShop/static/media/clock.c17e6ae8.svg",
@@ -44,8 +44,8 @@
   "entrypoints": [
     "static/js/runtime-main.47347bad.js",
     "static/css/2.ec02d681.chunk.css",
-    "static/js/2.95bde7d3.chunk.js",
-    "static/css/main.c21c6db8.chunk.css",
-    "static/js/main.4bd74be4.chunk.js"
+    "static/js/2.6ca0dbf3.chunk.js",
+    "static/css/main.95cd6ee8.chunk.css",
+    "static/js/main.7328efe5.chunk.js"
   ]
 }
