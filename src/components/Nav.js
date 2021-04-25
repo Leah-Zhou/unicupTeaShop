@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import BrandIntro from "./Lab";
 import Menu from "./Menu";
 import Promotion from "./Promotion";
-import Plante from "../asset/icons/planet.png";
+// import Plante from "../asset/icons/planet.png";
 import Review from "./Review";
 import WebFooter from "./Footer";
 import LogoIcon from "../asset/icons/icon-logo.svg";
@@ -56,7 +56,7 @@ const NavBar = () => {
 
   function scrollHandler(el, listRef) {
     ToggleMenu();
-    console.log(display);
+    // console.log(display);
     el.scrollIntoView({ behavior: "smooth" });
     options.forEach((opt) => opt.classList.remove("select-opt"));
     listRef.current.classList.add("select-opt");
@@ -83,7 +83,7 @@ const NavBar = () => {
                   variants={display ? closeVariant : openVariant}
                   initial="initial"
                   animate="animate"
-                  custom={20}
+                  custom={10}
                   className="menu-i-line"
                   d="M3.858,7.8H42.123a1.5,1.5,0,0,0,0-3H3.858a1.5,1.5,0,0,0,0,3Z"
                 />
@@ -99,7 +99,7 @@ const NavBar = () => {
                   variants={display ? closeVariant : openVariant}
                   initial="initial"
                   animate="animate"
-                  custom={-20}
+                  custom={-10}
                   className="menu-i-line"
                   d="M17.136,37.784H42.123a1.5,1.5,0,0,0,0-3H17.136a1.5,1.5,0,0,0,0,3Z"
                 />
@@ -149,18 +149,12 @@ const NavBar = () => {
           <img src={BrandName} alt="unicup logo" />
           <p>The Unique Bubble Tea Universe</p>
         </motion.div>
-        <div style={{ position: "relative" }}>
-          <div className="circle-bg"></div>
+        <div>
           <img
             src={heroImg}
             alt="unicup bubble tea product"
             className="hero-img"
           />
-          {/* <motion.img
-            src={Plante}
-            alt="planet icon"
-            className="float top-right"
-          /> */}
         </div>
       </div>
       <BrandIntro ref={setLabRef} node={labRef} correspond={optLabRef} />

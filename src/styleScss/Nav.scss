@@ -4,7 +4,7 @@
 
 .nav-bar {
   padding-top: 5px;
-  width: 100%;
+  width: 100vw;
   position: fixed;
   z-index: 5;
   top: 0;
@@ -76,7 +76,7 @@
 .menu-icon {
   @include breakpoint("small device") {
     width: $iconSize;
-    padding-right: 20px;
+    padding-right: 25px;
   }
   @include breakpoint("medium device") {
     display: none;
@@ -121,7 +121,7 @@
 }
 .select-opt {
   font-weight: 800;
-  color: $orange;
+  // color: $orange;
   &:before {
     content: " ";
     background-image: url("../asset/icons/planet.svg");
