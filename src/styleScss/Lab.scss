@@ -11,8 +11,8 @@
   @include breakpoint("medium device") {
     margin: 0 3em;
   }
-  @include breakpoint("medium device") {
-    margin: 0 80px;
+  @include breakpoint("large device") {
+    margin: 0 5em;
   }
 }
 .lab-content {
@@ -35,7 +35,7 @@
   h1 {
     text-align: center;
     font-size: clamp(18px, 2vw, 21px);
-    font-weight: 400;
+    font-weight: 600;
   }
   @include breakpoint("large device") {
     justify-self: start;
