@@ -35,7 +35,7 @@
   }
   h1 {
     text-align: center;
-    font-size: clamp(18px, 2vw, 21px);
+    font-size: clamp(17px, 2vw, 19px);
     font-weight: 600;
   }
   @include breakpoint("large device") {

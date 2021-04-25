@@ -23,7 +23,7 @@
     font-weight: 600;
     cursor: pointer;
     position: relative;
-    font-size: clamp($minSmallFont, 1.5vw, $maxSmallFont);
+    // font-size: clamp($minSmallFont, 1.5vw, $maxSmallFont);
   }
 }
 @supports (-ms-accelerator: true) {
@@ -47,7 +47,8 @@
   }
 }
 .nav-item {
-  font-size: clamp(14px, 1.5vw, 15px);
+  font-size: clamp(14px, 2vw, 16px);
+  color: $darkGray;
   @include breakpoint("medium device") {
     margin-left: 120px;
     display: inline-block;
