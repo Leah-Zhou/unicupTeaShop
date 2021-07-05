@@ -1,7 +1,7 @@
 
 <p align="center">
-<img src="src\asset\icons\planet.png" alt="icon" width="60px"/>
-<h3> Unicuo Bubble Teashop - Commercial website showcase</h3>
+<img src="src\asset\icons\brand-name.gif" alt="icon" width="180px"/>
+<h3 align="center"> Unicuo Bubble Teashop - Commercial website showcase</h3>
 </P>
 
 
