@@ -1,7 +1,10 @@
 
-![Commercial web site](src\asset\icons\planet.png)
+<p align="center">
+<img src="src\asset\icons\planet.png" alt="icon" width="60px"/>
+<h3> Unicuo Bubble Teashop - Commercial website showcase</h3>
+</P>
 
-# Unicuo Bubble Teashop - Commercial website showcase
+
 
 ## Intro
 It is a front-end web development showcase project aiming to build a commercial official website to promote the brand.
