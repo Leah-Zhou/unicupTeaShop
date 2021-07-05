@@ -1,5 +1,5 @@
 
-![Commercial web site](src\asset\icons\brand-name.gif)
+![Commercial web site](src\asset\icons\logo.svg)
 
 # Unicuo Bubble Teashop - Commercial website showcase
 
