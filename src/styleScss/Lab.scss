@@ -5,21 +5,22 @@
 .lab-section {
   position: relative;
   @extend %center-item;
-  @include breakpoint("small device") {
-    margin: 2em;
-  }
-  @include breakpoint("medium device") {
-    margin: 0 3em;
-  }
-  @include breakpoint("large device") {
-    margin: 0 5em;
-  }
+  // @include breakpoint("small device") {
+  //   margin: 2em;
+  // }
+  // @include breakpoint("medium device") {
+  //   margin: 0 3em;
+  // }
+  // @include breakpoint("large device") {
+  //   margin: 0 5em;
+  // }
 }
 .lab-content {
   margin-bottom: 50px;
-  // margin-top: 30px;
   @extend %center-item;
   @include gridStyle(1fr);
+  background-color: $bgColor;
+  padding: 2em;
   @include breakpoint("large device") {
     @include gridStyle(1fr 1fr);
   }
@@ -30,7 +31,6 @@
   max-width: 620px;
   color: $darkGray;
   @include breakpoint("small device") {
-    // @include flexStyle(column, center, auto);
     justify-self: center;
   }
   h1 {
@@ -47,5 +47,22 @@
       margin: 3em;
       font-size: 18px;
     }
+  }
+}
+.lab-img {
+  position: relative;
+  .img-style {
+    max-width: 500px;
+    height: auto;
+    width: 100%;
+    margin: 0.5em;
+    box-shadow: $grey 4px 3px 6px;
+    clip-path: circle(40%);
+  }
+  .wave {
+    width: 200px;
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
   }
 }

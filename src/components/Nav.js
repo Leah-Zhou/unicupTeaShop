@@ -27,7 +27,18 @@ const titleVariant = {
   animate: {
     opacity: 1,
     y: "-50%",
-    transition: { delay: 0.5, duration: 1.4, ease: "easeOut" },
+    transition: { delay: 1, duration: 1.4, ease: "easeOut" },
+  },
+};
+const heroVariant = {
+  initial: {
+    opacity: 0,
+    x: "50%",
+  },
+  animate: {
+    opacity: 1,
+    x: "0%",
+    transition: { delay: 0.5, duration: 0.8, ease: "easeOut" },
   },
 };
 
@@ -41,14 +52,12 @@ const NavBar = () => {
   const optPromoteRef = useRef("promote");
   const optReviewRef = useRef("review");
   const [display, setDisplay] = useState(false);
-  const [clickItem, setClickItem] = useState(null);
   const NavOptions = [
     { name: "TEA LAB", call: labRef, myRef: optLabRef },
     { name: "MENU", call: menuRef, myRef: optMenuRef },
     { name: "PROMOTION", call: promotionRef, myRef: optPromoteRef },
     { name: "REVIEWS", call: reviewRef, myRef: optReviewRef },
   ];
-  const options = document.querySelectorAll(".nav-bar li");
 
   const ToggleMenu = () => {
     setDisplay((perv) => !perv);
@@ -58,10 +67,6 @@ const NavBar = () => {
   function scrollHandler(el, listRef) {
     ToggleMenu();
     el.scrollIntoView({ behavior: "smooth" });
-    // setClickItem(listRef.current);
-    // if (clickItem != null) {
-    //   clickItem.classList.remove("select-opt");
-    // }
   }
 
   useEffect(() => {
@@ -152,13 +157,13 @@ const NavBar = () => {
           <img src={BrandName} alt="unicup logo" />
           <p>The Unique Bubble Tea Universe</p>
         </motion.div>
-        <div>
+        <motion.div variants={heroVariant} initial="initial" animate="animate">
           <img
             src={heroImg}
             alt="unicup bubble tea product"
             className="hero-img"
           />
-        </div>
+        </motion.div>
       </div>
       <BrandIntro ref={setLabRef} node={labRef} correspond={optLabRef} />
       <Menu ref={setMenuRef} node={menuRef} correspond={optMenuRef} />
