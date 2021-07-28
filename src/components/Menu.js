@@ -1,7 +1,6 @@
 import React, { forwardRef, useEffect } from "react";
 import MenuJson from "../json/Menu.json";
 import { v4 as uuidv4 } from "uuid";
-import Plante from "../asset/icons/planet.png";
 import "../styleScss/Menu.scss";
 import "aos/dist/aos.css";
 import milkTea from "../asset/imgs/milk-tea.png";
@@ -63,12 +62,8 @@ function MenuComponent(props, ref) {
 
   return (
     <>
+      <StarDrinks />
       <div className="container" ref={ref}>
-        <section data-aos="fade-right">
-          <img src={Plante} alt="planet icon" className="planet-style float" />
-          {/* <h1>OUR UNIQUE MENU</h1> */}
-        </section>
-        <StarDrinks />
         {menuOptions.map((each) => (
           <div
             key={uuidv4()}
