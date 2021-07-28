@@ -1,20 +1,21 @@
 import React, { forwardRef, useEffect, useRef } from "react";
 import LabData from "../json/Lab.json";
 import { v4 as uuidv4 } from "uuid";
-// import Plante from "../asset/icons/planet.png";
 import "../styleScss/Lab.scss";
-// import "aos/dist/aos.css";
 import environment from "../asset/imgs/lab.jpg";
 import tea from "../asset/imgs/teaB.jpg";
 import tapioca from "../asset/imgs/tappi.jpg";
 import wave from "../asset/icons/wave.gif";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { MotionPathPlugin } from "gsap/all";
 
 const BrandIntro = (props, ref) => {
   gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(MotionPathPlugin);
   gsap.core.globals("ScrollTrigger", ScrollTrigger);
   const contentRef = useRef([]);
+  const spotRef = useRef(null);
   const data = LabData.labInfo;
   data[0].img = environment;
   data[1].img = tea;
@@ -37,6 +38,7 @@ const BrandIntro = (props, ref) => {
   );
 
   useEffect(() => {
+    console.log(spotRef.current.parentElement.offsetHeight / 3);
     if (scrollElement) {
       parentObserver.observe(scrollElement);
     }
@@ -78,6 +80,47 @@ const BrandIntro = (props, ref) => {
         }
       );
     });
+
+    gsap.to(spotRef.current, {
+      scale: "1.3",
+      motionPath: {
+        path: [
+          { x: 0, y: 0 },
+          {
+            x: 200,
+            y: contentRef.current[0].offsetHeight,
+          },
+        ],
+        align: "self",
+      },
+      duration: 2,
+      scrollTrigger: {
+        trigger: contentRef.current[0],
+        start: "top top",
+        toggleActions: "play none none none",
+      },
+    });
+    gsap.to(spotRef.current, {
+      scale: "1.6",
+      ease: "power4.easeOut",
+      motionPath: {
+        path: [
+          { x: 200, y: contentRef.current[0].offsetHeight },
+          {
+            x: 50,
+            y: 1200,
+          },
+        ],
+        align: "self",
+      },
+      duration: 3,
+      scrollTrigger: {
+        trigger: contentRef.current[1],
+        start: "top top",
+        toggleActions: "play none none none",
+      },
+    });
+
     return () => {
       if (scrollElement) {
         parentObserver.unobserve(scrollElement);
@@ -93,6 +136,7 @@ const BrandIntro = (props, ref) => {
   return (
     <>
       <div className="lab-section" ref={ref}>
+        <div className="spot" ref={spotRef}></div>
         {data.map((each) => (
           <div key={uuidv4()} className="lab-content" ref={collectRef}>
             <div className="intro-content">

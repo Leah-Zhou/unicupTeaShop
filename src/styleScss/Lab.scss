@@ -5,24 +5,16 @@
 .lab-section {
   position: relative;
   @extend %center-item;
-  // @include breakpoint("small device") {
-  //   margin: 2em;
-  // }
-  // @include breakpoint("medium device") {
-  //   margin: 0 3em;
-  // }
-  // @include breakpoint("large device") {
-  //   margin: 0 5em;
-  // }
+  background-color: $bgColor;
 }
 .lab-content {
-  // margin-bottom: 50px;
+  position: relative;
+  z-index: 2;
   @extend %center-item;
   @include gridStyle(1fr);
-  background-color: $bgColor;
   padding: 5em 2em;
   @include breakpoint("large device") {
-    @include gridStyle(0.8fr 1fr);
+    @include gridStyle(1fr 1fr);
     justify-items: baseline;
   }
 }
@@ -65,4 +57,16 @@
     bottom: 5%;
     left: 10%;
   }
+}
+.spot {
+  // background-color: $orange;
+  width: 100px;
+  height: 100px;
+  // border-radius: 50%;
+  background-image: url("../asset/icons/planet.png");
+  background-size: contain;
+  position: absolute;
+  z-index: 1;
+  top: 0%;
+  left: 10%;
 }
