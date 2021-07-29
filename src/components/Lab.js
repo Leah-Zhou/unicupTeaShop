@@ -108,7 +108,7 @@ const BrandIntro = (props, ref) => {
           { x: 200, y: contentRef.current[0].offsetHeight },
           {
             x: 50,
-            y: 1200,
+            y: 1300,
           },
         ],
         align: "self",

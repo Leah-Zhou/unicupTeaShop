@@ -12,9 +12,10 @@
   z-index: 2;
   @extend %center-item;
   @include gridStyle(1fr);
-  padding: 5em 2em;
+  padding: 2em 1em;
   @include breakpoint("large device") {
     @include gridStyle(1fr 1fr);
+    padding: 4em 2em;
     justify-items: baseline;
   }
 }
@@ -59,10 +60,11 @@
   }
 }
 .spot {
-  // background-color: $orange;
+  @include breakpoint("small device") {
+    display: none;
+  }
   width: 100px;
   height: 100px;
-  // border-radius: 50%;
   background-image: url("../asset/icons/planet.png");
   background-size: contain;
   position: absolute;

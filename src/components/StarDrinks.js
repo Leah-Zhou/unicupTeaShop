@@ -25,24 +25,33 @@ const StarDrinks = () => {
     { name: "Sunset Time", img: panadaTea },
   ];
 
-  const scrollMenu = () => {
+  const scrollMenu = (e) => {
+    const value = e.deltaY;
+    let dir;
+    if (value > 0) {
+      dir = -1;
+    } else {
+      dir = 1;
+    }
     ScrollTrigger.matchMedia({
       "(min-width:650px)": function () {
         gsap.to(drinkSection.current, {
+          // x: () => dir * (drinkSection.current.clientWidth - window.innerWidth),
           x: () =>
             -(
               drinkSection.current.scrollWidth -
               document.documentElement.clientWidth
             ) + "px",
-          duration: 3,
+          duration: 2,
           ease: "power3.easeOut",
           scrollTrigger: {
             trigger: drinkSection.current.parentElement,
             pin: true,
             scrub: "1",
-            // toggleActions: "restart none none none",
+            toggleActions: "restart none none none",
             start: "bottom center",
-            // end: () => "+=" + drinkSection.current.offsetWidth,
+            end: () =>
+              "+=" + drinkSection.current.clientWidth - window.innerWidth,
           },
         });
       },
@@ -57,7 +66,7 @@ const StarDrinks = () => {
       <div
         className="drink-section"
         ref={drinkSection}
-        onWheel={() => scrollMenu()}
+        onWheel={(e) => scrollMenu(e)}
       >
         {drinks.map((drink) => (
           <section className="each-drink" key={drink.name}>

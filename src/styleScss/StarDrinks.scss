@@ -8,8 +8,9 @@
   overflow-y: hidden;
   overflow-x: scroll;
   justify-content: flex-start;
-  @include breakpoint("large device") {
-    width: 160vw;
+  @include breakpoint("medium device") {
+    width: max-content;
+    margin: 1em 2em;
   }
 }
 .drink-section::-webkit-scrollbar {
@@ -20,16 +21,16 @@
   min-width: 300px;
   @include breakpoint("large device") {
     min-width: 400px;
-    &:hover .expand-loop {
-      transform: translateX(50px);
-    }
-    &:hover .drink-name {
-      opacity: 1;
-      transform: translateX(50px);
-    }
-    &:hover .drink-img {
-      transform: scale(1.1) rotate(-8deg);
-    }
+    // &:hover .expand-loop {
+    //   transform: translateX(50px);
+    // }
+    // &:hover .drink-name {
+    //   opacity: 1;
+    //   transform: translateX(50px);
+    // }
+    // &:hover .drink-img {
+    //   transform: scale(1.1) rotate(-8deg);
+    // }
   }
 }
 .drink-img {
@@ -40,7 +41,6 @@
   max-width: 250px;
   min-width: 200px;
   z-index: 2;
-  // left: -30%;
   transition: transform 0.5s ease;
 }
 .expand-loop {
@@ -55,13 +55,12 @@
   transition: transform 0.6s ease;
   box-shadow: -3px 8px 20px 5px rgba(rgb(190, 190, 190), 0.35);
   @include breakpoint("large device") {
-    right: 35%;
+    right: 20%;
     z-index: 1;
     width: 160px;
     height: 160px;
   }
   p {
-    // transform: translate(10px, 70px);
     position: relative;
     top: 10%;
     font-weight: 600;
@@ -70,8 +69,8 @@
     font-size: clamp(15px, 2vw, 17px);
     @include breakpoint("large device") {
       top: 15%;
-      opacity: 0;
-      // transform: translate(-10px, 70px);
+      left: 30%;
+      // opacity: 0;
       transition: all 0.5s ease;
     }
   }

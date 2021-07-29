@@ -70,7 +70,7 @@ function MenuComponent(props, ref) {
             className="menu-opt"
             data-aos="fade-left"
             data-aos-duration="800"
-            data-aos-anchor-placement="top-center"
+            data-aos-anchor-placement="top-bottom"
           >
             <section className="menu-category">
               <div style={{ position: "relative" }}>
