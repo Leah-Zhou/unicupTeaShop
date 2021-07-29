@@ -25,18 +25,10 @@ const StarDrinks = () => {
     { name: "Sunset Time", img: panadaTea },
   ];
 
-  const scrollMenu = (e) => {
-    const value = e.deltaY;
-    let dir;
-    if (value > 0) {
-      dir = -1;
-    } else {
-      dir = 1;
-    }
+  const scrollMenu = () => {
     ScrollTrigger.matchMedia({
       "(min-width:650px)": function () {
         gsap.to(drinkSection.current, {
-          // x: () => dir * (drinkSection.current.clientWidth - window.innerWidth),
           x: () =>
             -(
               drinkSection.current.scrollWidth -
@@ -48,7 +40,7 @@ const StarDrinks = () => {
             trigger: drinkSection.current.parentElement,
             pin: true,
             scrub: "1",
-            toggleActions: "restart none none none",
+            toggleActions: "restart none reverse none",
             start: "bottom center",
             end: () =>
               "+=" + drinkSection.current.clientWidth - window.innerWidth,
@@ -66,7 +58,7 @@ const StarDrinks = () => {
       <div
         className="drink-section"
         ref={drinkSection}
-        onWheel={(e) => scrollMenu(e)}
+        onWheel={() => scrollMenu()}
       >
         {drinks.map((drink) => (
           <section className="each-drink" key={drink.name}>

@@ -21,16 +21,16 @@
   min-width: 300px;
   @include breakpoint("large device") {
     min-width: 400px;
-    // &:hover .expand-loop {
-    //   transform: translateX(50px);
-    // }
-    // &:hover .drink-name {
-    //   opacity: 1;
-    //   transform: translateX(50px);
-    // }
-    // &:hover .drink-img {
-    //   transform: scale(1.1) rotate(-8deg);
-    // }
+    &:hover .expand-loop {
+      transform: translateX(50px);
+    }
+    &:hover .drink-name {
+      opacity: 1;
+      transform: translateX(40px);
+    }
+    &:hover .drink-img {
+      transform: scale(1.1) rotate(-8deg);
+    }
   }
 }
 .drink-img {
@@ -55,7 +55,7 @@
   transition: transform 0.6s ease;
   box-shadow: -3px 8px 20px 5px rgba(rgb(190, 190, 190), 0.35);
   @include breakpoint("large device") {
-    right: 20%;
+    right: 30%;
     z-index: 1;
     width: 160px;
     height: 160px;
@@ -69,8 +69,8 @@
     font-size: clamp(15px, 2vw, 17px);
     @include breakpoint("large device") {
       top: 15%;
-      left: 30%;
-      // opacity: 0;
+      left: 10%;
+      opacity: 0;
       transition: all 0.5s ease;
     }
   }
