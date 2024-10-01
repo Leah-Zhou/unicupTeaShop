@@ -155,7 +155,7 @@ const NavBar = () => {
           animate="animate"
         >
           <img src={BrandName} alt="unicup logo" />
-          <p>The Unique Bubble Tea Universe</p>
+          <p>Bubble Tea, Your Way!</p>
         </motion.div>
         <motion.div variants={heroVariant} initial="initial" animate="animate">
           <img

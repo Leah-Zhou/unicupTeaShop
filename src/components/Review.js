@@ -68,7 +68,7 @@ const Review = (props, ref) => {
     <div className="container" ref={ref}>
       <section data-aos="fade-right">
         <img src={Plante} alt="planet icon" className="planet-style float" />
-        <h1>We are happy you like it!</h1>
+        <h1>What our bubble lovers are saying!</h1>
       </section>
       <section className="review-content">
         {reviewData.map((review) => (
@@ -82,11 +82,13 @@ const Review = (props, ref) => {
               <img src={review.img} alt="customer review" />
             </li>
             <li>
-              <p style={{ fontWeight: 800, fontSize: "17px" }}>
-                "{review.abstract}"
+              <h3>"{review.abstract}"</h3>
+              <p style={{ margin: "10px", textAlign: "left" }}>
+                {review.comment}
               </p>
-              <p style={{ margin: "10px" }}>{review.comment}</p>
-              <p>From dear customer {review.user}</p>
+              {/* <p style={{ fontSize: "14px", textAlign: "right" }}>
+                From dear customer {review.user}
+              </p> */}
             </li>
           </ul>
         ))}

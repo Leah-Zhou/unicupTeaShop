@@ -77,9 +77,7 @@ function MenuComponent(props, ref) {
                 <img src={each.img} alt={each.alt} />
                 <div className={each.bgColor}></div>
               </div>
-              <h3 style={{ fontWeight: "800", fontSize: "16px" }}>
-                {each.title}
-              </h3>
+              <h3>{each.title}</h3>
             </section>
             <section>
               {each.content.map((item) => (

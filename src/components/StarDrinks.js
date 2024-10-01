@@ -50,7 +50,10 @@ const StarDrinks = () => {
     });
   };
   return (
-    <div className="menu-section" style={{ textAlign: "center" }}>
+    <div
+      className="menu-section"
+      style={{ textAlign: "center", paddingBottom: "1em" }}
+    >
       <section data-aos="fade-right">
         <img src={Plante} alt="planet icon" className="planet-style float" />
       </section>

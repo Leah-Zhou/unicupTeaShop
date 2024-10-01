@@ -98,13 +98,13 @@
     }
     height: auto;
     width: 100%;
-    max-width: 450px;
+    max-width: 480px;
     display: block;
   }
   p {
-    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
     display: inline-block;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 2px;
   }
 }

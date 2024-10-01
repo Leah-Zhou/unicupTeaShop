@@ -66,7 +66,7 @@
     font-weight: 600;
     color: $darkGray;
     font-family: "Poppins", sans-serif;
-    font-size: clamp(15px, 2vw, 17px);
+    font-size: clamp(15px, 2vw, 18px);
     @include breakpoint("large device") {
       top: 15%;
       left: 10%;

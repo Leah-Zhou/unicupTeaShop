@@ -14,31 +14,34 @@
   @include gridStyle(1fr);
   padding: 2em 1em;
   @include breakpoint("large device") {
-    @include gridStyle(1fr 1fr);
+    // @include gridStyle(1fr 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 4em 2em;
-    justify-items: baseline;
+    // justify-items: baseline;
   }
 }
 .intro-content {
   @extend %center-item;
   margin: 1em;
-  max-width: 620px;
+  max-width: 550px;
   color: $darkGray;
   @include breakpoint("small device") {
     justify-self: center;
   }
   h1 {
-    text-align: center;
-    font-size: clamp(18px, 2vw, 28px);
+    text-align: left;
+    font-size: clamp(18px, 2vw, 32px);
     font-weight: 700;
   }
   @include breakpoint("large device") {
     justify-self: start;
   }
   p {
-    text-align: center;
+    text-align: left;
     @include breakpoint("large device") {
-      margin: 3em;
+      // margin: 3em;
       font-size: 18px;
     }
   }
@@ -46,7 +49,7 @@
 .lab-img {
   position: relative;
   .img-style {
-    max-width: 500px;
+    max-width: 600px;
     height: auto;
     width: 100%;
     margin: 0.5em;
