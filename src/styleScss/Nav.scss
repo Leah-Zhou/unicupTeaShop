@@ -20,9 +20,15 @@
   }
   li {
     text-align: center;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
     position: relative;
+    font-family: "Baloo 2", sans-serif;
+    font-size: 1.25em;
+    &:hover {
+      color: $orange;
+    }
+
     // font-size: clamp($minSmallFont, 1.5vw, $maxSmallFont);
   }
 }
@@ -92,6 +98,7 @@
 }
 .logo-name {
   text-align: center;
+  max-width: 600px;
   img {
     @include breakpoint("small device") {
       width: 300px;
@@ -140,7 +147,10 @@
 }
 .hero-section {
   margin-top: 200px;
-  @include flexStyle(column, center, auto);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  // @include flexStyle(row, center, auto);
   @include breakpoint("medium device") {
     @include flexStyle(row, center, auto);
     align-content: center;
@@ -152,8 +162,31 @@
   min-width: 150px;
   width: 100%;
   max-width: 300px;
+  margin-bottom: 6em;
   @include breakpoint("large device") {
     margin-left: 30px;
     max-width: 450px;
   }
+}
+
+// wave style in hero section
+.custom-shape-divider-bottom-1746045694 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1746045694 svg {
+  position: relative;
+  display: block;
+  width: calc(131% + 1.3px);
+  height: 107px;
+}
+
+.custom-shape-divider-bottom-1746045694 .shape-fill {
+  fill: #fff1dc;
 }

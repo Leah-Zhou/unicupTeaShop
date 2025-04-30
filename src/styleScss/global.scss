@@ -7,8 +7,8 @@ $footerIconSmall: 18px;
 $footerIconLarge: 25px;
 
 // font size
-$minLargeFont: 23px;
-$maxLargeFont: 40px;
+$minLargeFont: 40px;
+$maxLargeFont: 60px;
 $minSmallFont: 16px;
 $maxSmallFont: 18px;
 $minP: 15px;
@@ -21,6 +21,7 @@ body {
   // font-family: "Open Sans", sans-serif;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  font-weight: 500;
   background-color: #fdfef0;
   line-height: 1.8;
   color: $black;
@@ -42,8 +43,11 @@ li {
 h1 {
   font-size: clamp($minLargeFont, 3vw, $maxLargeFont);
   // font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  letter-spacing: 2px;
+  // font-weight: 300;
+  // letter-spacing: 2px;
+  font-family: "Baloo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
   margin: 0;
   color: $darkGray;
 }

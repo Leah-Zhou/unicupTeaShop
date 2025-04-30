@@ -3,20 +3,20 @@
     {
       "img": "/imgs/lab.jpg",
       "alt": "lab environment",
-      "title": "Create Your Own Unique Bubble Tea!",
+      "title": "Customize Every Sip!",
       "content": "In Unicup bubble teashop, you are the professionalist of making tea drinks. You could create your special tea drinks with the best materails we provided."
     },
 
     {
       "img": "/imgs/teaB.jpg",
       "alt": "tea leaf",
-      "title": "Crafted with Premium Tea Leaves from Taiwan",
+      "title": "Sourced from Taiwan’s Finest",
       "content": "Take a sip of our tea drink and you will experience each tea has its own determined aroma and taste."
     },
     {
       "img": "/imgs/tappi.jpg",
       "alt": "tapioca",
-      "title": "Healthy & Delicious Options Just for You",
+      "title": "Guilt-Free & Delicious",
       "content": "We are providing healthy tapioca which is made of various healthy nuts cereal powder. The tapioca is more healthy , tasty, and chewy!"
     }
   ]

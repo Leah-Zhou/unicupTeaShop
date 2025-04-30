@@ -6,8 +6,9 @@ import Promotion from "./Promotion";
 import Review from "./Review";
 import WebFooter from "./Footer";
 import LogoIcon from "../asset/icons/icon-logo.svg";
-import BrandName from "../asset/icons/brand-name.gif";
-import heroImg from "../asset/imgs/bbtea-hero.png";
+// import BrandName from "../asset/icons/brand-name.gif";
+import heroImg from "../asset/imgs/heroimg.png";
+// import heroImg2 from "../asset/imgs/hero-2.png";
 import "../styleScss/Nav.scss";
 import { motion } from "framer-motion";
 
@@ -154,9 +155,14 @@ const NavBar = () => {
           initial="initial"
           animate="animate"
         >
-          <img src={BrandName} alt="unicup logo" />
-          <p>Bubble Tea, Your Way!</p>
+          <h1>Bubble Tea, Your Way!</h1>
+          {/* <img src={BrandName} alt="unicup logo" /> */}
+          <p>
+            Unicup hits different! Our ingredient blends organic tea leaf and
+            your creative tea ideas!
+          </p>
         </motion.div>
+
         <motion.div variants={heroVariant} initial="initial" animate="animate">
           <img
             src={heroImg}
@@ -164,7 +170,21 @@ const NavBar = () => {
             className="hero-img"
           />
         </motion.div>
+        <div class="custom-shape-divider-bottom-1746045694">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
       </div>
+
       <BrandIntro ref={setLabRef} node={labRef} correspond={optLabRef} />
       <Menu ref={setMenuRef} node={menuRef} correspond={optMenuRef} />
       <Promotion

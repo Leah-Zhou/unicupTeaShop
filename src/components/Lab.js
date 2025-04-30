@@ -5,7 +5,7 @@ import "../styleScss/Lab.scss";
 import environment from "../asset/imgs/lab.jpg";
 import tea from "../asset/imgs/teaB.jpg";
 import tapioca from "../asset/imgs/tappi.jpg";
-import wave from "../asset/icons/wave.gif";
+// import wave from "../asset/icons/wave.gif";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MotionPathPlugin } from "gsap/all";
@@ -139,13 +139,13 @@ const BrandIntro = (props, ref) => {
         <div className="spot" ref={spotRef}></div>
         {data.map((each) => (
           <div key={uuidv4()} className="lab-content" ref={collectRef}>
+            <div className="lab-img">
+              <img src={each.img} alt={each.alt} className="img-style" />
+              {/* <img src={wave} alt="wave" className="wave" /> */}
+            </div>
             <div className="intro-content">
               <h1>{each.title}</h1>
               <p>{each.content}</p>
-            </div>
-            <div className="lab-img">
-              <img src={each.img} alt={each.alt} className="img-style" />
-              <img src={wave} alt="wave" className="wave" />
             </div>
           </div>
         ))}
