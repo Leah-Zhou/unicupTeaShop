@@ -54,7 +54,7 @@
 }
 .nav-item {
   font-size: clamp(14px, 2vw, 16px);
-  color: $darkGray;
+  // color: $darkGray;
   @include breakpoint("medium device") {
     margin-left: 120px;
     display: inline-block;
@@ -99,6 +99,10 @@
 .logo-name {
   text-align: center;
   max-width: 600px;
+  padding: 1.25em;
+  @include breakpoint("small device") {
+    padding: 2em 1.25em 0em 1.25em;
+  }
   img {
     @include breakpoint("small device") {
       width: 300px;
@@ -112,7 +116,7 @@
     font-size: clamp(1rem, 1.5vw, 1.5rem);
     display: inline-block;
     font-weight: 600;
-    letter-spacing: 2px;
+    // letter-spacing: 2px;
   }
 }
 @keyframes scaleElement {
@@ -150,7 +154,7 @@
   display: flex;
   justify-content: center;
   position: relative;
-  // @include flexStyle(row, center, auto);
+  @include flexStyle(column, center, auto);
   @include breakpoint("medium device") {
     @include flexStyle(row, center, auto);
     align-content: center;

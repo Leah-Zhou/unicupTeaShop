@@ -62,15 +62,38 @@ const BrandIntro = (props, ref) => {
           },
         }
       );
+      //HIDE THE CIRCLE SCALING EFFECT OF IMGS*********
+      // gsap.fromTo(
+      //   wrapper.querySelector(".img-style"),
+      //   {
+      //     clipPath: "circle(0px)",
+      //   },
+      //   {
+      //     clipPath: "circle(300px)",
+      //     duration: 1.3,
+      //     ease: "back.out(1.4)",
+      //     scrollTrigger: {
+      //       trigger: wrapper,
+      //       start: "top center",
+      //       end: "+=300%",
+      //       toggleActions: "restart none none resume",
+      //     },
+      //   }
+      // );
+
       gsap.fromTo(
         wrapper.querySelector(".img-style"),
         {
-          clipPath: "circle(0%)",
+          height: 0,
+          y: "30px",
+          opacity: 0,
         },
         {
-          clipPath: "circle(40%)",
+          height: "100%",
+          y: "0px",
+          opacity: 1,
           duration: 1.3,
-          ease: "back.out(1.4)",
+          ease: "power4.inOut",
           scrollTrigger: {
             trigger: wrapper,
             start: "top center",
@@ -144,7 +167,7 @@ const BrandIntro = (props, ref) => {
               {/* <img src={wave} alt="wave" className="wave" /> */}
             </div>
             <div className="intro-content">
-              <h1>{each.title}</h1>
+              <h2>{each.title}</h2>
               <p>{each.content}</p>
             </div>
           </div>

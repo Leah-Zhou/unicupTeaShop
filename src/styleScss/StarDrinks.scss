@@ -2,6 +2,10 @@
 @import "../styleScss/global.scss";
 @import "../styleScss/mixIn.scss";
 
+.menu-section {
+  margin: 6em;
+}
+
 .drink-section {
   scrollbar-width: none;
   @include flexStyle(row, space-around, 100%);
@@ -33,6 +37,7 @@
     }
   }
 }
+
 .drink-img {
   display: block;
   position: relative;
@@ -43,35 +48,52 @@
   z-index: 2;
   transition: transform 0.5s ease;
 }
-.expand-loop {
+
+// HIDING THE CIRCLE BEDHIND RINKS
+// .expand-loop {
+//   position: absolute;
+//   bottom: 20%;
+//   right: 25%;
+//   z-index: 5;
+//   width: 100px;
+//   height: 100px;
+//   background-color: $peelOrange;
+//   border-radius: 50%;
+//   transition: transform 0.6s ease;
+//   box-shadow: -3px 8px 20px 5px rgba(rgb(190, 190, 190), 0.35);
+//   @include breakpoint("large device") {
+//     right: 30%;
+//     z-index: 1;
+//     width: 160px;
+//     height: 160px;
+//   }
+//   p {
+//     position: relative;
+//     top: 10%;
+//     font-weight: 600;
+//     // color: $darkGray;
+//     font-family: "Poppins", sans-serif;
+//     font-size: clamp(15px, 2vw, 18px);
+//     @include breakpoint("large device") {
+//       top: 15%;
+//       left: 10%;
+//       opacity: 0;
+//       transition: all 0.5s ease;
+//     }
+//   }
+// }
+
+.drinks-wrapper {
+  position: relative;
+}
+.drink-fav {
   position: absolute;
-  bottom: 20%;
-  right: 25%;
-  z-index: 5;
-  width: 100px;
-  height: 100px;
-  background-color: $peelOrange;
-  border-radius: 50%;
-  transition: transform 0.6s ease;
-  box-shadow: -3px 8px 20px 5px rgba(rgb(190, 190, 190), 0.35);
-  @include breakpoint("large device") {
-    right: 30%;
-    z-index: 1;
-    width: 160px;
-    height: 160px;
-  }
-  p {
-    position: relative;
-    top: 10%;
-    font-weight: 600;
-    color: $darkGray;
-    font-family: "Poppins", sans-serif;
-    font-size: clamp(15px, 2vw, 18px);
-    @include breakpoint("large device") {
-      top: 15%;
-      left: 10%;
-      opacity: 0;
-      transition: all 0.5s ease;
-    }
-  }
+  top: 50px;
+  left: 120px;
+  z-index: -1;
+  // border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  clip-path: circle(40%);
 }
