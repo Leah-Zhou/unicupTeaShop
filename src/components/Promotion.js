@@ -1,6 +1,6 @@
 import React, { forwardRef, useEffect } from "react";
 import "../styleScss/Promotion.scss";
-import Plante from "../asset/icons/planet.png";
+// import Plante from "../asset/icons/planet.png";
 import imgTop from "../asset/imgs/drink-top.png";
 import imgBottom from "../asset/imgs/drink-bottom.png";
 import { useInView } from "react-intersection-observer";
@@ -67,10 +67,10 @@ const Promotion = (props, ref) => {
 
   return (
     <div ref={ref}>
-      <section className="promote-title">
+      {/* <section className="promote-title">
         <img src={Plante} alt="planet icon" className="planet-style float" />
         <h1 data-aos="fade-up">Promotion</h1>
-      </section>
+      </section> */}
       <div className="wrap">
         <section
           style={{
@@ -105,9 +105,9 @@ const Promotion = (props, ref) => {
           initial="initial"
           animate={inView ? "animate" : "initial"}
         >
-          <h2>NEW RELEASE!</h2>
-          <h2>MANGO BOBA LEMON TEA</h2>
-          <h3>BUY ONE GET ONE FREE!</h3>
+          <h3>NEW RELEASE!</h3>
+          <h3>MANGO BOBA LEMON TEA</h3>
+          <h2>BOGO NOW!</h2>
         </motion.div>
       </div>
     </div>

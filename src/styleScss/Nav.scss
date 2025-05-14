@@ -134,7 +134,7 @@
   font-weight: 900;
   &:before {
     content: " ";
-    background-image: url("../asset/icons/planet.svg");
+    background-image: url("../asset/icons/planet.png");
     @include planetStyle(-10px, -50px, 1, 40px);
     display: inline-block;
     background-size: contain;

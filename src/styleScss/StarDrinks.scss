@@ -3,35 +3,44 @@
 @import "../styleScss/mixIn.scss";
 
 .menu-section {
-  margin: 6em;
+  margin: 6em 0;
 }
 
 .drink-section {
-  scrollbar-width: none;
+  // scrollbar-width: none;
+  // @include flexStyle(row, space-around, 100%);
+  // overflow-y: hidden;
+  // overflow-x: scroll;
+  // @include breakpoint("medium device") {
+  //   width: max-content;
+  //   margin: 1em 2em;
+  // }
+
+  // display: grid;
+  // grid-template-columns: 30% 30% 30%;
+  // justify-content: center;
+  // width: 100vw;
   @include flexStyle(row, space-around, 100%);
-  overflow-y: hidden;
-  overflow-x: scroll;
-  justify-content: flex-start;
-  @include breakpoint("medium device") {
-    width: max-content;
-    margin: 1em 2em;
-  }
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 .drink-section::-webkit-scrollbar {
   width: 0;
 }
 .each-drink {
   position: relative;
-  min-width: 300px;
+  min-width: 200px;
+  max-width: 300px;
+  width: 33%;
+  margin: 1em;
   @include breakpoint("large device") {
-    min-width: 400px;
-    &:hover .expand-loop {
-      transform: translateX(50px);
-    }
-    &:hover .drink-name {
-      opacity: 1;
-      transform: translateX(40px);
-    }
+    // &:hover .expand-loop {
+    //   transform: translateX(50px);
+    // }
+    // &:hover .drink-name {
+    //   opacity: 1;
+    //   transform: translatey(40px);
+    // }
     &:hover .drink-img {
       transform: scale(1.1) rotate(-8deg);
     }
@@ -42,14 +51,14 @@
   display: block;
   position: relative;
   height: auto;
-  width: 60%;
-  max-width: 250px;
+  width: 100%;
+  max-width: 300px;
   min-width: 200px;
   z-index: 2;
   transition: transform 0.5s ease;
 }
 
-// HIDING THE CIRCLE BEDHIND RINKS
+// HIDING THE CIRCLE SHAPE BEDHIND RINKS
 // .expand-loop {
 //   position: absolute;
 //   bottom: 20%;
@@ -88,12 +97,12 @@
 }
 .drink-fav {
   position: absolute;
-  top: 50px;
-  left: 120px;
-  z-index: -1;
-  // border-radius: 50%;
-  width: 250px;
-  height: 250px;
-  object-fit: contain;
-  clip-path: circle(40%);
+  bottom: 25%;
+  right: -10%;
+  min-width: 120px;
+  max-width: 250px;
+  height: 50%;
+  object-fit: fit;
+  border-radius: 80px 80px 16px 16px;
+  // clip-path: circle(30%);
 }

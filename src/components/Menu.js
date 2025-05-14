@@ -1,38 +1,38 @@
 import React, { forwardRef, useEffect } from "react";
-import MenuJson from "../json/Menu.json";
-import { v4 as uuidv4 } from "uuid";
+// import MenuJson from "../json/Menu.json";
+// import { v4 as uuidv4 } from "uuid";
 import "../styleScss/Menu.scss";
 import "aos/dist/aos.css";
-import milkTea from "../asset/imgs/milk-tea.png";
-import tea from "../asset/imgs/tea.png";
-import juice from "../asset/imgs/juice.png";
+// import milkTea from "../asset/imgs/milk-tea.png";
+// import tea from "../asset/imgs/tea.png";
+// import juice from "../asset/imgs/juice.png";
 import StarDrinks from "./StarDrinks";
 
 function MenuComponent(props, ref) {
-  const menuInfo = MenuJson.opts;
-  const menuOptions = [
-    {
-      title: menuInfo[0].title,
-      content: menuInfo[0].content,
-      img: juice,
-      alt: menuInfo[0].alt,
-      bgColor: "circle-orange",
-    },
-    {
-      title: menuInfo[1].title,
-      content: menuInfo[1].content,
-      img: milkTea,
-      alt: menuInfo[1].alt,
-      bgColor: "circle-brown",
-    },
-    {
-      title: menuInfo[2].title,
-      content: menuInfo[2].content,
-      img: tea,
-      alt: menuInfo[2].alt,
-      bgColor: "circle-green",
-    },
-  ];
+  // const menuInfo = MenuJson.opts;
+  // const menuOptions = [
+  //   {
+  //     title: menuInfo[0].title,
+  //     content: menuInfo[0].content,
+  //     img: juice,
+  //     alt: menuInfo[0].alt,
+  //     bgColor: "circle-orange",
+  //   },
+  //   {
+  //     title: menuInfo[1].title,
+  //     content: menuInfo[1].content,
+  //     img: milkTea,
+  //     alt: menuInfo[1].alt,
+  //     bgColor: "circle-brown",
+  //   },
+  //   {
+  //     title: menuInfo[2].title,
+  //     content: menuInfo[2].content,
+  //     img: tea,
+  //     alt: menuInfo[2].alt,
+  //     bgColor: "circle-green",
+  //   },
+  // ];
   const scrollElement = props.node;
   const correspondOpt = props.correspond;
   const options = document.querySelectorAll(".nav-bar li");
@@ -62,9 +62,9 @@ function MenuComponent(props, ref) {
 
   return (
     <>
-      <StarDrinks />
       <div className="container" ref={ref}>
-        {menuOptions.map((each) => (
+        <StarDrinks />
+        {/* {menuOptions.map((each) => (
           <div
             key={uuidv4()}
             className="menu-opt"
@@ -88,7 +88,7 @@ function MenuComponent(props, ref) {
               ))}
             </section>
           </div>
-        ))}
+        ))} */}
       </div>
     </>
   );

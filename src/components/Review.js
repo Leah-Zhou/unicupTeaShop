@@ -82,13 +82,20 @@ const Review = (props, ref) => {
               <img src={review.img} alt="customer review" />
             </li>
             <li>
-              <h3>"{review.abstract}"</h3>
+              <h4>"{review.abstract}"</h4>
               <p style={{ margin: "10px", textAlign: "left" }}>
                 {review.comment}
               </p>
-              {/* <p style={{ fontSize: "14px", textAlign: "right" }}>
-                From dear customer {review.user}
-              </p> */}
+              <p
+                style={{
+                  fontSize: "14px",
+                  fontWeightL: "400",
+                  textAlign: "right",
+                  fontStyle: "italic",
+                }}
+              >
+                — {review.user}
+              </p>
             </li>
           </ul>
         ))}

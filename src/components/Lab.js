@@ -85,12 +85,12 @@ const BrandIntro = (props, ref) => {
         wrapper.querySelector(".img-style"),
         {
           height: 0,
-          y: "30px",
+          // y: "30px",
           opacity: 0,
         },
         {
           height: "100%",
-          y: "0px",
+          // y: "0px",
           opacity: 1,
           duration: 1.3,
           ease: "power4.inOut",

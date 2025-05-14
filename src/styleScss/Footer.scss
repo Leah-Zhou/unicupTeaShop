@@ -4,7 +4,7 @@
 
 .footer {
   position: relative;
-  background-color: $lightGrey;
+  background-color: $bgColor;
   @include flexStyle(column, center, 500px);
   > img {
     height: auto;
@@ -47,4 +47,25 @@
 .copyright {
   position: absolute;
   bottom: 2em;
+}
+
+// wave style
+.custom-shape-divider-top-1747255499 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1747255499 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 89px;
+}
+
+.custom-shape-divider-top-1747255499 .shape-fill {
+  fill: #fdfef0;
 }
