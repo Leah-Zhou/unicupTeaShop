@@ -155,8 +155,8 @@ const NavBar = () => {
           initial="initial"
           animate="animate"
         >
-          <h1>Bubble Tea, Your Way!</h1>
           {/* <img src={BrandName} alt="unicup logo" /> */}
+          <h1>Bubble Tea, Your Way!</h1>
           <p>
             Unicup hits different! Our ingredient blends organic tea leaf and
             your creative tea ideas!

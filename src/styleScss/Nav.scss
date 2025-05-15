@@ -105,11 +105,11 @@
   }
   img {
     @include breakpoint("small device") {
-      width: 300px;
+      width: 200px;
     }
     height: auto;
     width: 100%;
-    max-width: 480px;
+    max-width: 200px;
     display: block;
   }
   p {
@@ -165,11 +165,11 @@
 .hero-img {
   min-width: 150px;
   width: 100%;
-  max-width: 300px;
+  max-width: 450px;
   margin-bottom: 6em;
   @include breakpoint("large device") {
     margin-left: 30px;
-    max-width: 450px;
+    // max-width: 450px;
   }
 }
 

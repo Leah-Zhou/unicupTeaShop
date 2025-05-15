@@ -2,7 +2,7 @@ import React, { forwardRef, useEffect, useRef } from "react";
 import LabData from "../json/Lab.json";
 import { v4 as uuidv4 } from "uuid";
 import "../styleScss/Lab.scss";
-import environment from "../asset/imgs/lab.jpg";
+import environment from "../asset/imgs/customerService.jpg";
 import tea from "../asset/imgs/teaB.jpg";
 import tapioca from "../asset/imgs/tappi.jpg";
 // import wave from "../asset/icons/wave.gif";
@@ -84,16 +84,18 @@ const BrandIntro = (props, ref) => {
       gsap.fromTo(
         wrapper.querySelector(".img-style"),
         {
-          height: 0,
+          // height: 0,
           // y: "30px",
           opacity: 0,
+          clipPath: "inset(0 50% 0 50%)",
         },
         {
-          height: "100%",
+          // height: "100%",
           // y: "0px",
           opacity: 1,
+          clipPath: "inset(0 0% 0 0%)",
           duration: 1.3,
-          ease: "power4.inOut",
+          ease: "power4.easeOut",
           scrollTrigger: {
             trigger: wrapper,
             start: "top center",
